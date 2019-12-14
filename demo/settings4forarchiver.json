@@ -1,0 +1,6 @@
+{
+  "outputFile" : "./results-with-files/results4.json",
+  "inputFile": "./results/results4.json",
+  "baseFolder": "./temp/LSINF1121-Data-Structures-And-Algorithms",
+  "zipFolder": "./results-with-files/LSINF1121"
+}

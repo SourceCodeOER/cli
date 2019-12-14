@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/UCL-INGI/LSINF1252",
+  "strategy": "inginious-git",
+  "resultFile": "./results/results1.json",
+  "inginiousURL": "https://inginious.info.ucl.ac.be/course/LSINF1252",
+  "workingDirectory": "./temp"
+}

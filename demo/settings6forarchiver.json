@@ -1,0 +1,6 @@
+{
+  "outputFile" : "./results-with-files/results6.json",
+  "inputFile": "./results/results6.json",
+  "baseFolder": "./temp/cuisine-algorithmique",
+  "zipFolder": "./results-with-files/cuisine-algorithmique"
+}

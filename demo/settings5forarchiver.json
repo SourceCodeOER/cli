@@ -1,0 +1,6 @@
+{
+  "outputFile" : "./results-with-files/results5.json",
+  "inputFile": "./results/results5.json",
+  "baseFolder": "./temp/JobBlockly",
+  "zipFolder": "./results-with-files/JobBlockly"
+}

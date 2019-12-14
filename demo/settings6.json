@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/lin3out/cuisine-algorithmique",
+  "strategy": "inginious-git",
+  "resultFile": "./results/results6.json",
+  "inginiousURL": "https://inginious.org/course/primaire",
+  "workingDirectory": "./temp"
+}

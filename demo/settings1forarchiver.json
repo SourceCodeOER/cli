@@ -1,0 +1,6 @@
+{
+  "outputFile" : "./results-with-files/results1.json",
+  "inputFile": "./results/results1.json",
+  "baseFolder": "./temp/LSINF1252",
+  "zipFolder": "./results-with-files/LSINF1252"
+}

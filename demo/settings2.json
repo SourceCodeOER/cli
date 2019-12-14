@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/UCL-INGI/LEPL1402",
+  "strategy": "inginious-git",
+  "resultFile": "./results/results2.json",
+  "inginiousURL": "https://inginious.info.ucl.ac.be/course/LEPL1402",
+  "workingDirectory": "./temp"
+}

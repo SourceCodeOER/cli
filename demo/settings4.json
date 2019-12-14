@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/UCL-INGI/LSINF1121-Data-Structures-And-Algorithms",
+  "strategy": "inginious-git",
+  "resultFile": "./results/results4.json",
+  "inginiousURL": "https://inginious.info.ucl.ac.be/course/LSINF1121-2016",
+  "workingDirectory": "./temp"
+}

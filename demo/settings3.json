@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/UCL-INGI/CS1-Java",
+  "strategy": "inginious-git",
+  "resultFile": "./results/results3.json",
+  "inginiousURL": "https://inginious.org/course/uclouvain-cs1-java",
+  "workingDirectory": "./temp"
+}
