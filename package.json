@@ -1,0 +1,55 @@
+{
+  "name": "sourcecode-cli",
+  "version": "1.0.0",
+  "description": "CLI tools for SourceCode",
+  "bin": {
+    "sourcecode-cli": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "LSINF1252_crawler": "node index.js crawler --settings demo/settings1.json",
+    "LEPL1402_crawler": "node index.js crawler --settings demo/settings2.json",
+    "CS1-Java_crawler": "node index.js crawler --settings demo/settings3.json",
+    "LSINF1121_crawler": "node index.js crawler --settings demo/settings4.json",
+    "JobBlockly_crawler": "node index.js crawler --settings demo/settings5.json",
+    "Cuisine-Algorithmique_crawler": "node index.js crawler --settings demo/settings6.json",
+    "LSINF1252_archiver": "node index.js archiver --settings demo/settings1forarchiver.json",
+    "LEPL1402_archiver": "node index.js archiver --settings demo/settings2forarchiver.json",
+    "CS1-Java_archiver": "node index.js archiver --settings demo/settings3forarchiver.json",
+    "LSINF1121_archiver": "node index.js archiver --settings demo/settings4forarchiver.json",
+    "JobBlockly_archiver": "node index.js archiver --settings demo/settings5forarchiver.json",
+    "Cuisine-Algorithmique_archiver": "node index.js archiver --settings demo/settings6forarchiver.json",
+    "LSINF1252_uploader": "node index.js uploader --resultFile results/results1.json --user demo/credentials.json",
+    "LEPL1402_uploader": "node index.js uploader --resultFile results/results2.json --user demo/credentials.json",
+    "CS1-Java_uploader": "node index.js uploader --resultFile results/results3.json --user demo/credentials.json",
+    "LSINF1121_uploader": "node index.js uploader --resultFile results/results4.json --user demo/credentials.json",
+    "JobBlockly_uploader": "node index.js uploader --resultFile results/results5.json --user demo/credentials.json",
+    "Cuisine-Algorithmique_uploader": "node index.js uploader --resultFile results/results6.json --user demo/credentials.json"
+  },
+  "author": "jy95",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jy95/sourcecode_api.git",
+    "directory": "cli"
+  },
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@hapi/joi": "^16.1.8",
+    "archiver": "^3.1.1",
+    "filehound": "^1.17.3",
+    "js-yaml": "^3.13.1",
+    "lodash.groupby": "^4.6.0",
+    "lodash.partition": "^4.6.0",
+    "simple-git": "^1.128.0",
+    "slash": "^3.0.0",
+    "supertest": "^4.0.2",
+    "yargs": "^15.0.2"
+  },
+  "devDependencies": {
+    "@types/yargs": "^13.0.3",
+    "@types/hapi__joi": "^16.0.4"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
