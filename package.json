@@ -1,5 +1,5 @@
 {
-  "name": "sourcecode-cli",
+  "name": "@sourcecodeoer/cli",
   "version": "1.0.0",
   "description": "CLI tools for SourceCode",
   "bin": {
@@ -29,8 +29,7 @@
   "author": "jy95",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jy95/sourcecode_api.git",
-    "directory": "cli"
+    "url": "https://github.com/SourceCodeOER/cli"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {

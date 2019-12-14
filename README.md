@@ -57,7 +57,7 @@ Only two properties are required inside : `"exercises"` and `"own_categories"`.
 Extra properties can be defined if you want (like `"extraction_date"` and `"url"` to keep track of the source / extraction date).
 
 Inside the key `"exercises"` , we have an array of exercises metadata.  
-As described in the endpoint [/api/bulk_create_exercises](https://jy95.github.io/sourcecode_api/#operation/createMultipleExercises),
+As described in the endpoint [/api/bulk_create_exercises](https://sourcecodeoer.github.io/sourcecode_api/#operation/createMultipleExercises),
 some attributes for an exercise are required  
 (like `"title"`, `tags`, `description`) whereas some are optional (like `"url"` or `"file"`).
 
