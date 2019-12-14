@@ -6,12 +6,19 @@ The purpose of this cli tool is to easily bulky export / import exercises for th
 
 - [Pandoc](https://pandoc.org/) (for the description conversion)
 
+## Installation
+
+```sh
+npm install --save-dev @sourcecodeoer/cli
+```
+
 ## What are the available commands / options ?
 
 This tool was build on top of [yargs](http://yargs.js.org/).  
-For the full list of options and commands, everything is explained with the help command :
+For the full list of commands and options, everything is explained with the help command :
+
 ```sh
-node index.js --help
+npx sourcecode-cli --help
 ```
 
 ## How does it works ?
