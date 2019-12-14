@@ -1,6 +1,7 @@
 {
   "name": "@sourcecodeoer/cli",
   "version": "1.0.0",
+  "keywords": ["cli", "sourcecode", "oer" ,"crawler", "uploader", "archiver", "validator", "programming-exercises", "cataloging"],
   "description": "CLI tools for SourceCode",
   "bin": {
     "sourcecode-cli": "./index.js"
