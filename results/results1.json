@@ -2575,7 +2575,7 @@
         },
         {
             "title": "Printing data",
-            "description": "In this exercise, you will familiarize yourself with the functions\r\n[printf(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/printf.3.html)\r\n(printing on the standard output) and\r\n[sprintf(3)](https://inginious.info.ucl.ac.be/course/LSINF1252/%60printf%20%3Chttps://sites.uclouvain.be/SystInfo/manpages/man3/sprintf.3.html)\r\n(text formatting).\r\n",
+            "description": "In this exercise, you will familiarize yourself with the functions\r\n[printf(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/printf.3.html)\r\n(printing on the standard output) and\r\n[sprintf(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/sprintf.3.html)\r\n(text formatting).\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4656,6 +4656,6 @@
         "1": "Misconception",
         "2": "autres"
     },
-    "extraction_date": "2019-12-17T22:37:37.244Z",
+    "extraction_date": "2019-12-17T23:03:38.265Z",
     "url": "https://github.com/UCL-INGI/LSINF1252"
 }

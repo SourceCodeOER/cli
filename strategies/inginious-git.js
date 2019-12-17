@@ -546,6 +546,13 @@ function clean_inginious_links(description, inginious_link) {
 
     // To  solve nasty links found
     const url_solver = (givenUrl) => {
+
+        // conner case for links of LSINF1252 - some links are literally broken like
+        // like "%60printf%20%3Chttps://sites.uclouvain.be/SystInfo/manpages/man3/sprintf.3.html"
+        if (givenUrl.startsWith("%")) {
+            givenUrl = givenUrl.replace(/\%.*http/, "http");
+        }
+
         // if already an absolute link, no work to do or
         // if no inginiousURL in settings, cannot infer the real link
         if (isAbsoluteUrl(givenUrl) || inginious_link.length === 0) {
