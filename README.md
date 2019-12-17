@@ -69,7 +69,7 @@ some attributes for an exercise are required
 (like `"title"`, `tags`, `description`) whereas some are optional (like `"url"` or `"file"`).
 
 As you can see, whatever the platform, there is some common tags categories that should be used whenever it is possible.
-The full list of them : 
+An possible [example](default_auto_generated_tags.json) might be: 
 
 ```json
 {
@@ -138,7 +138,8 @@ These two sub properties must be present : use an empty array if you don't have 
 Each item of these arrays should be relative path so `archiver` can build the absolute path with the option `baseFolder` (in case you change location of an exercise folder afterward)
 and automatically add the `"file"` property in each exercise.
 
-Using the property `"file"` in each exercise, the `uploader` command will do for you the mapping between files and exercises when you want to upload exercises into the API.
+Using the property `"file"` in each exercise, the `uploader` command will do for you the mapping between files and exercises when you want to upload exercises into the API. 
+(don't forget to use option `auto_generated_tags_categories` in `uploader` if you used other common tag categories)
 
 ## Which strategies are available by default for crawler ?
 

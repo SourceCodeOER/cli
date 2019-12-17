@@ -1,7 +1,17 @@
 {
   "name": "@sourcecodeoer/cli",
   "version": "1.0.0",
-  "keywords": ["cli", "sourcecode", "oer" ,"crawler", "uploader", "archiver", "validator", "programming-exercises", "cataloging"],
+  "keywords": [
+    "cli",
+    "sourcecode",
+    "oer",
+    "crawler",
+    "uploader",
+    "archiver",
+    "validator",
+    "programming-exercises",
+    "cataloging"
+  ],
   "description": "CLI tools for SourceCode",
   "bin": {
     "sourcecode-cli": "./index.js"
@@ -37,6 +47,7 @@
     "@hapi/joi": "^16.1.8",
     "archiver": "^3.1.1",
     "filehound": "^1.17.3",
+    "is-absolute-url": "^3.0.3",
     "js-yaml": "^3.13.1",
     "lodash.groupby": "^4.6.0",
     "lodash.partition": "^4.6.0",

@@ -10,6 +10,7 @@ const child_process = require("child_process");
 const path = require("path");
 const dirname = path.dirname;
 const slash = require('slash');
+const isAbsoluteUrl = require('is-absolute-url');
 
 const exists = (dir) => {
     try {
@@ -126,8 +127,15 @@ module.exports = async function (options) {
 
             let exercise = {
                 "title": doc.name,
-                "description": rst2md(
-                    (doc.hasOwnProperty("context")) ? doc.context : "" // it is optional on Inginious
+                // We must improve description before serve that into a json file
+                "description": clean_inginious_links(
+                    rst2md(
+                        (doc.hasOwnProperty("context")) ? doc.context : "" // it is optional on Inginious
+                    ),
+                    // the optional inginious URL given by properties
+                    (options.hasOwnProperty("inginiousURL"))
+                        ? options.inginiousURL
+                        : ""
                 ),
                 "tags": auto_tags.concat(found_tags) // merge them in a single array
             };
@@ -522,4 +530,40 @@ function handle_exercise_title(exercise) {
     );
 
     return exercise;
+}
+
+// regex useful to clean inginious links
+const img_html_regex = /<img[^>]+src="([^">]+)"/gm; // as pandoc links always start by src, it should work as expected
+const markdown_links_regex = /\[([^\[]+)\]\((.*)\)/gm; // only takes link part : [](thisOne) - result : thisOne
+
+// To handle links inside markdown since Inginious links are a real mess
+function clean_inginious_links(description, inginious_link) {
+    // some reading for people that never read documentation ^^
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+
+    // maybe useful for some scenario
+    const getRootUrl = inginious_link.replace(/^(.*\/\/[^\/?#]*).*$/, "$1");
+
+    // To  solve nasty links found
+    const url_solver = (givenUrl) => {
+        // if already an absolute link, no work to do or
+        // if no inginiousURL in settings, cannot infer the real link
+        if (isAbsoluteUrl(givenUrl) || inginious_link.length === 0) {
+            return givenUrl;
+        }
+
+        // Two kinds of ugly relative links exists on inginious
+        // Type 1 : like ( "PART3Bst/bst.png" ) : relative to a course url
+        // Type 2 : like ( "/course/LEPL1402/BoundedBuffer/BoundedBuffer.png" ) : relative to root path
+
+        // If Type 1, we can append the given link with this part (it is relative to the course)
+        return (!givenUrl.startsWith("/"))
+            ? inginious_link + "/" + givenUrl
+            : getRootUrl + givenUrl;
+    };
+
+    // purge description of nasty broken inginious links
+    return description
+        .replace(markdown_links_regex, (_match, p1, p2) => `[${p1}](${url_solver(p2)})`)
+        .replace(img_html_regex, (_match, p1) => `<img src="${url_solver(p1)}"`);
 }

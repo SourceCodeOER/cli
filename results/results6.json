@@ -2,7 +2,7 @@
     "exercises": [
         {
             "title": "Les conditions",
-            "description": "C'est fatiguant de devoir regarder l'arbre de décision pour chaque\r\ngâteau. Et si on faisait un programme qui peut déterminer si un gâteau a\r\nbien été fait selon l'arbre de décision ou pas? T'es partant ? Allons-y\r\n!\r\n\r\nPour rappel, l'arbre de décision ressemblait à ceci :\r\n\r\n> <img src=\"arbre/arbre.png\" height=\"300\" alt=\"image\" />\r\n\r\nUtilise les blocs pour programmer l'arbre de décision. Pour t'aider, on\r\na déjà mis les premiers blocs. Tu dois simplement déterminer les cas où\r\nle gâteau est valide.\r\n",
+            "description": "C'est fatiguant de devoir regarder l'arbre de décision pour chaque\r\ngâteau. Et si on faisait un programme qui peut déterminer si un gâteau a\r\nbien été fait selon l'arbre de décision ou pas? T'es partant ? Allons-y\r\n!\r\n\r\nPour rappel, l'arbre de décision ressemblait à ceci :\r\n\r\n> <img src=\"https://inginious.org/course/primaire/arbre/arbre.png\" height=\"300\" alt=\"image\" />\r\n\r\nUtilise les blocs pour programmer l'arbre de décision. Pour t'aider, on\r\na déjà mis les premiers blocs. Tu dois simplement déterminer les cas où\r\nle gâteau est valide.\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -206,6 +206,6 @@
         "1": "Misconception",
         "2": "autres"
     },
-    "extraction_date": "2019-12-14T12:01:01.887Z",
+    "extraction_date": "2019-12-17T22:38:08.396Z",
     "url": "https://github.com/lin3out/cuisine-algorithmique"
 }

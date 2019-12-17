@@ -832,7 +832,7 @@
         },
         {
             "title": "Simple Binary Search Tree",
-            "description": "For this task, you will implement a simple binary search on an existing\r\nbinary tree. A binary tree has the following structure:\r\n\r\n<img src=\"BST/bst.png\" width=\"540\" height=\"340\" alt=\"image\" />\r\n\r\nThis binary tree is composed of nodes implemented using the following\r\nstructure.\r\n\r\n``` c\r\n/*\r\n* Node has a value, @value, and two children, @left and @right.\r\n* All the children of @left and itself have a smaller value than the node and all the children of @right and itself have a larger value than node\r\n*/\r\ntypedef struct node{\r\n    int value;\r\n    struct node* left; // to smaller values\r\n    struct node* right; // to larger values\r\n} node_t;\r\n```\r\n\r\nThe binary tree itself is defined as follows.\r\n\r\n``` c\r\ntypedef struct bt{\r\n    struct node* root;\r\n} bt_t;\r\n```\r\n",
+            "description": "For this task, you will implement a simple binary search on an existing\r\nbinary tree. A binary tree has the following structure:\r\n\r\n<img src=\"https://inginious.info.ucl.ac.be/course/LSINF1252/BST/bst.png\" width=\"540\" height=\"340\" alt=\"image\" />\r\n\r\nThis binary tree is composed of nodes implemented using the following\r\nstructure.\r\n\r\n``` c\r\n/*\r\n* Node has a value, @value, and two children, @left and @right.\r\n* All the children of @left and itself have a smaller value than the node and all the children of @right and itself have a larger value than node\r\n*/\r\ntypedef struct node{\r\n    int value;\r\n    struct node* left; // to smaller values\r\n    struct node* right; // to larger values\r\n} node_t;\r\n```\r\n\r\nThe binary tree itself is defined as follows.\r\n\r\n``` c\r\ntypedef struct bt{\r\n    struct node* root;\r\n} bt_t;\r\n```\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2423,7 +2423,7 @@
         },
         {
             "title": "Producteurs/Consommateurs",
-            "description": "Le syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants :  \r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions des\r\n    librairies)\r\n\r\n**Attention:** veuillez utiliser la version **HTML** du syllabus\r\n\r\n![image](PC/buffer.png)\r\n",
+            "description": "Le syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants :  \r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions des\r\n    librairies)\r\n\r\n**Attention:** veuillez utiliser la version **HTML** du syllabus\r\n\r\n![image](https://inginious.info.ucl.ac.be/course/LSINF1252/PC/buffer.png)\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2575,7 +2575,7 @@
         },
         {
             "title": "Printing data",
-            "description": "In this exercise, you will familiarize yourself with the functions\r\n[printf(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/printf.3.html)\r\n(printing on the standard output) and\r\n[sprintf(3)](%60printf%20%3Chttps://sites.uclouvain.be/SystInfo/manpages/man3/sprintf.3.html)\r\n(text formatting).\r\n",
+            "description": "In this exercise, you will familiarize yourself with the functions\r\n[printf(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/printf.3.html)\r\n(printing on the standard output) and\r\n[sprintf(3)](https://inginious.info.ucl.ac.be/course/LSINF1252/%60printf%20%3Chttps://sites.uclouvain.be/SystInfo/manpages/man3/sprintf.3.html)\r\n(text formatting).\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4656,6 +4656,6 @@
         "1": "Misconception",
         "2": "autres"
     },
-    "extraction_date": "2019-12-14T12:02:19.357Z",
+    "extraction_date": "2019-12-17T22:37:37.244Z",
     "url": "https://github.com/UCL-INGI/LSINF1252"
 }
