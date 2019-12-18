@@ -3,5 +3,6 @@
   "strategy": "inginious-git",
   "resultFile": "./results/results2.json",
   "inginiousURL": "https://inginious.info.ucl.ac.be/course/LEPL1402",
+  "license": "CC-BY-NC-SA-4.0",
   "workingDirectory": "./temp"
 }

@@ -3,5 +3,6 @@
   "strategy": "inginious-git",
   "resultFile": "./results/results1.json",
   "inginiousURL": "https://inginious.info.ucl.ac.be/course/LSINF1252",
+  "license": "GPL-3.0-or-later",
   "workingDirectory": "./temp"
 }

@@ -2,5 +2,6 @@
   "url": "https://github.com/CelineDknp/JobBlockly",
   "strategy": "inginious-git",
   "resultFile": "./results/results5.json",
+  "license": "AGPL-3.0-or-later",
   "workingDirectory": "./temp"
 }

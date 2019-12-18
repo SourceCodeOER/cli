@@ -4,5 +4,6 @@
   "_COURSE_": "cours",
   "_EXERCISE-TYPE_": "type d'exercice",
   "_PROGRAMMING-LANGUAGE_": "langage",
-  "_AUTHOR_": "auteur"
+  "_AUTHOR_": "auteur",
+  "_LICENSE_": "licence"
 }
