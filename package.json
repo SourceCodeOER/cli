@@ -1,6 +1,6 @@
 {
   "name": "@sourcecodeoer/cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "keywords": [
     "cli",
     "sourcecode",
@@ -10,7 +10,9 @@
     "archiver",
     "validator",
     "programming-exercises",
-    "cataloging"
+    "cataloging",
+    "opensource",
+    "open-source"
   ],
   "description": "CLI tools for SourceCode",
   "bin": {
@@ -51,7 +53,7 @@
     "js-yaml": "^3.13.1",
     "lodash.groupby": "^4.6.0",
     "lodash.partition": "^4.6.0",
-    "simple-git": "^1.128.0",
+    "simple-git": "^1.129.0",
     "slash": "^3.0.0",
     "supertest": "^4.0.2",
     "yargs": "^15.0.2"
