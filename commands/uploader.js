@@ -101,7 +101,7 @@ async function send_to_API(argv, results) {
             .concat(Object.values(results["own_categories"]));
 
         response = await request
-            .post("/api/bulk_create_or_find_tag_categories")
+            .post("/api/bulk/create_or_find_tag_categories")
             .set('Authorization', 'bearer ' + JWT_TOKEN)
             .set('Content-Type', 'application/json')
             .set('Accept', 'application/json')
@@ -159,7 +159,7 @@ async function send_to_API(argv, results) {
         // if no files, use the simplest way
         response = (files.length === 0)
             ? await request
-                .post("/api/bulk_create_exercises")
+                .post("/api/bulk/create_exercises")
                 .set('Authorization', 'bearer ' + JWT_TOKEN)
                 .set('Content-Type', 'application/json')
                 .send(exercises)
@@ -177,7 +177,7 @@ async function send_to_API(argv, results) {
 async function bulk_insert_request(request, JWT_TOKEN, exercises, files) {
     // the most complicated thing :
     let requestInstance = request
-        .post("/api/bulk_create_exercises")
+        .post("/api/bulk/create_exercises")
         .set('Authorization', 'bearer ' + JWT_TOKEN);
 
     // Add all given files
