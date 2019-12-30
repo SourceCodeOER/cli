@@ -3,7 +3,8 @@ const path = require("path");
 const Joi = require('@hapi/joi');
 
 // validation schema
-const auto_generated_tags_categories = ["_PLATFORM_", "_SOURCE_", "_COURSE_", "_EXERCISE-TYPE_", "_PROGRAMMING-LANGUAGE_", "_AUTHOR_"];
+const tags_categories_file = require("../default_auto_generated_tags");
+const auto_generated_tags_categories = Object.keys(tags_categories_file);
 const linux_absolute_path = /^(?:(\/[^/ ]*)+\/?)$/;
 const window_absolute_path = /^[a-zA-Z]:\\.*$/;
 const is_absolute_path = new RegExp("(" + linux_absolute_path.source + ")|(" + window_absolute_path.source + ")");

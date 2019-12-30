@@ -2,17 +2,6 @@ const supertest = require('supertest');
 const {promises: fs, readFileSync} = require("fs");
 const path = require("path");
 
-// Auto generated tags
-// if we want to map them to another name, we can do that easily ( Here : English TO French )
-const AUTO_GENERATED_TAG_CATEGORIES = {
-    "_PLATFORM_": "plateforme",
-    "_SOURCE_": "source",
-    "_COURSE_": "cours",
-    "_EXERCISE-TYPE_": "type d'exercice",
-    "_PROGRAMMING-LANGUAGE_": "langage",
-    "_AUTHOR_": "auteur"
-};
-
 exports = module.exports = {
     "command": "uploader",
     "describe": "upload exercises to API using the generated file of crawler",
@@ -96,8 +85,9 @@ async function send_to_API(argv, results) {
 
         const JWT_TOKEN = response.body.token;
 
+        const AUTO_GENERATED_TAG_CATEGORIES = argv["auto_generated_tags_categories"];
         const tags_categories = Object
-            .values(AUTO_GENERATED_TAG_CATEGORIES)
+            .values(argv["auto_generated_tags_categories"])
             .concat(Object.values(results["own_categories"]));
 
         response = await request
