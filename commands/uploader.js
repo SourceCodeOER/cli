@@ -111,6 +111,7 @@ async function send_to_API(argv, results) {
                 file: exercise.file
             }))
             .filter(exercise => exercise.has_file === true)
+            .filter(exercise => exercise.file !== null)
             .map(exercise => ({
                 filename: path.basename(exercise.file),
                 exercise: exercise.index,
