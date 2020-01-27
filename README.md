@@ -1,5 +1,7 @@
 # SourceCode-cli 
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SourceCodeOER/cli.svg)](https://greenkeeper.io/)
+
 The purpose of this cli tool is to easily bulky export / import exercises for the API. 
 
 ## Requirements
