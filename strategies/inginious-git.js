@@ -24,7 +24,7 @@ const rst2md = (str) => {
     try {
         const result = child_process.spawnSync(
             "pandoc",
-            ["--from=rst", "--to=markdown_strict-fenced_code_attributes+backtick_code_blocks"],
+            ["--from=rst", "--to=html5", "--no-highlight"],
             {input: str, encoding: "utf-8"}
         );
         return result.stdout;
@@ -543,7 +543,7 @@ function handle_exercise_title(exercise) {
 
 // regex useful to clean inginious links
 const img_html_regex = /<img[^>]+src="([^">]+)"/gm; // as pandoc links always start by src, it should work as expected
-const markdown_links_regex = /\[([^\[]+)\]\((.*)\)/gm; // only takes link part : [](thisOne) - result : thisOne
+const links_regex = /<a href="([^">]+)"/gm; // only takes link part : [](thisOne) - result : thisOne
 
 // To handle links inside markdown since Inginious links are a real mess
 function clean_inginious_links(description, inginious_link) {
@@ -580,6 +580,6 @@ function clean_inginious_links(description, inginious_link) {
 
     // purge description of nasty broken inginious links
     return description
-        .replace(markdown_links_regex, (_match, p1, p2) => `[${p1}](${url_solver(p2)})`)
+        .replace(links_regex, (_match, p1, p2) => `<a href="${url_solver(p1)}"`)
         .replace(img_html_regex, (_match, p1) => `<img src="${url_solver(p1)}"`);
 }
