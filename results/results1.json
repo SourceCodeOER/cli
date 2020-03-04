@@ -2830,7 +2830,7 @@
         },
         {
             "title": "Printing data",
-            "description": "<p>In this exercise, you will familiarize yourself with the functions <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/printf.3.html\">printf(3)</a> (printing on the standard output) and <a href=\"%60printf%20%3Chttps://sites.uclouvain.be/SystInfo/manpages/man3/sprintf.3.html\">sprintf(3)</a> (text formatting).</p>\r\n",
+            "description": "<p>In this exercise, you will familiarize yourself with the functions <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/printf.3.html\">printf(3)</a> (printing on the standard output) and <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/sprintf.3.html\">sprintf(3)</a> (text formatting).</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3433,7 +3433,7 @@
         },
         {
             "title": "make basics - calculator",
-            "description": "<p><em>Estimated time: 5 minutes</em></p>\r\n<p>You have just built a simple calculator. When typing <code>ls</code> in your command line, the source folder has the following structure:</p>\r\n<pre class=\"console\"><code>calc.c    calc.h    Makefile    operations.c    operations.h</code></pre>\r\n<p><code>calc.c</code> contains the calculator which handles the 4 basic operations: addition, substraction, multiplication, and division. These 4 operations are implemented in <code>operations.c</code>.</p>\r\n<p>As you might have noticed, there are also two other files: <code>calc.h</code> and <code>operations.h</code>. These are the corresponding <strong>header</strong> files of <code>calc.c</code> and <code>operations.c</code>. These headers contain the function prototypes and specifications, but not their definitions. They can also contain <code>extern</code> declarations of variables. For more on that, see <a href=\"https://www.tutorialspoint.com/cprogramming/c_header_files.htm\">this page</a> or chapter 4 in <a href=\"#kernighan2006c\" class=\"citation\">[kernighan2006c]</a>.</p>\r\n<p>When compiling this calculator, you need to specify in the <code>Makefile</code> rules the header files needed by <code>calc.c</code>, that is both <code>calc.h</code> and <code>operations.h</code>.</p>\r\n<hr />\r\n<div id=\"citations\">\r\n<dl>\r\n<dt><span id=\"kernighan2006c\" class=\"citation-label\">kernighan2006c</span></dt>\r\n<dd><p>Kernighan, B. W., &amp; Ritchie, D. M. (2006). The C programming language.</p>\r\n</dd>\r\n</dl>\r\n</div>\r\n",
+            "description": "<p><em>Estimated time: 5 minutes</em></p>\r\n<p>You have just built a simple calculator. When typing <code>ls</code> in your command line, the source folder has the following structure:</p>\r\n<pre class=\"console\"><code>calc.c    calc.h    Makefile    operations.c    operations.h</code></pre>\r\n<p><code>calc.c</code> contains the calculator which handles the 4 basic operations: addition, substraction, multiplication, and division. These 4 operations are implemented in <code>operations.c</code>.</p>\r\n<p>As you might have noticed, there are also two other files: <code>calc.h</code> and <code>operations.h</code>. These are the corresponding <strong>header</strong> files of <code>calc.c</code> and <code>operations.c</code>. These headers contain the function prototypes and specifications, but not their definitions. They can also contain <code>extern</code> declarations of variables. For more on that, see <a href=\"https://www.tutorialspoint.com/cprogramming/c_header_files.htm\">this page</a> or chapter 4 in <a href=\"https://inginious.info.ucl.ac.be/course/LSINF1252/#kernighan2006c\" class=\"citation\">[kernighan2006c]</a>.</p>\r\n<p>When compiling this calculator, you need to specify in the <code>Makefile</code> rules the header files needed by <code>calc.c</code>, that is both <code>calc.h</code> and <code>operations.h</code>.</p>\r\n<hr />\r\n<div id=\"citations\">\r\n<dl>\r\n<dt><span id=\"kernighan2006c\" class=\"citation-label\">kernighan2006c</span></dt>\r\n<dd><p>Kernighan, B. W., &amp; Ritchie, D. M. (2006). The C programming language.</p>\r\n</dd>\r\n</dl>\r\n</div>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -5111,6 +5111,6 @@
         "1": "Misconception",
         "2": "autres"
     },
-    "extraction_date": "2020-03-04T17:33:55.586Z",
+    "extraction_date": "2020-03-04T17:48:45.884Z",
     "url": "https://github.com/UCL-INGI/LSINF1252"
 }
