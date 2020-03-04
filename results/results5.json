@@ -838,7 +838,7 @@
         },
         {
             "title": "Exercice 1",
-            "description": "Utilise le bloc\r\n\r\n> <img src=\"01_maze/bloc_avancer.png\" height=\"30\" alt=\"image\" />\r\n\r\npour faire avancer le zombie d'un pas.\r\n",
+            "description": "<div class=\"container row\">\r\n<div class=\"container col-xs-8 col-md-9 text-justify\">\r\n<p>Utilise le bloc</p>\r\n<blockquote>\r\n<p><img src=\"01_maze/bloc_avancer.png\" height=\"30\" alt=\"image\" /></p>\r\n</blockquote>\r\n<p>pour faire avancer le zombie d'un pas.</p>\r\n</div>\r\n</div>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -894,7 +894,7 @@
         },
         {
             "title": "Exercice 2",
-            "description": "<img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" />\r\n\r\n**Amène le zombie vers le tournesol, mais évite la plante carnivore !**\r\n",
+            "description": "<p><img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" /></p>\r\n<p><strong>Amène le zombie vers le tournesol, mais évite la plante carnivore !</strong></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -950,7 +950,7 @@
         },
         {
             "title": "Exercice 3",
-            "description": "<img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" />\r\n\r\n**Devoir... atteindre... tournesol.**\r\n",
+            "description": "<p><img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" /></p>\r\n<p><strong>Devoir... atteindre... tournesol.</strong></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1002,7 +1002,7 @@
         },
         {
             "title": "Exercice 4",
-            "description": "Essaie le bloc « Répéter » pour utiliser moins de blocs...\r\n",
+            "description": "<p>Essaie le bloc « Répéter » pour utiliser moins de blocs...</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1058,7 +1058,7 @@
         },
         {
             "title": "Exercice 5",
-            "description": "<img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" />\r\n\r\n**Peux-tu résoudre cette énigme en utilisant le moins de blocs possible\r\n?**\r\n",
+            "description": "<p><img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" /></p>\r\n<p><strong>Peux-tu résoudre cette énigme en utilisant le moins de blocs possible ?</strong></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1114,7 +1114,7 @@
         },
         {
             "title": "Exercice 6",
-            "description": "<img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" />\r\n\r\n**Chère personne. Moi zombie. Devoir... atteindre... tournesol.**\r\n",
+            "description": "<p><img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" /></p>\r\n<p><strong>Chère personne. Moi zombie. Devoir... atteindre... tournesol.</strong></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1170,7 +1170,7 @@
         },
         {
             "title": "Exercice 7",
-            "description": "<img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" />\r\n\r\n**Utilise le bloc « Répéter » pour amener le zombie au tournesol. (Évite\r\nles plantes carnivores!)**\r\n",
+            "description": "<p><img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" /></p>\r\n<p><strong>Utilise le bloc « Répéter » pour amener le zombie au tournesol. (Évite les plantes carnivores!)</strong></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1226,7 +1226,7 @@
         },
         {
             "title": "Exercice 8",
-            "description": "Cette fois, utilise la boucle \"répéter jusqu'à\".\r\n\r\nAttention, ton code doit être capable de traverser autant de cases que\r\nnécéssaire jusqu'à la plante !\r\n",
+            "description": "<p>Cette fois, utilise la boucle \"répéter jusqu'à\".</p>\r\n<p>Attention, ton code doit être capable de traverser autant de cases que nécéssaire jusqu'à la plante !</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1286,7 +1286,7 @@
         },
         {
             "title": "Exercice 9",
-            "description": "<img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" />\r\n\r\n**Peux-tu rejoindre le tournesol en utilisant uniquement quatre blocs\r\n?**\r\n",
+            "description": "<p><img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" /></p>\r\n<p><strong>Peux-tu rejoindre le tournesol en utilisant uniquement quatre blocs ?</strong></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1342,7 +1342,7 @@
         },
         {
             "title": "Exercice 10",
-            "description": "<img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" />\r\n\r\n**Peux-tu aller au tournesol en utilisant uniquement six blocs?**\r\n",
+            "description": "<p><img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" /></p>\r\n<p><strong>Peux-tu aller au tournesol en utilisant uniquement six blocs?</strong></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1398,7 +1398,7 @@
         },
         {
             "title": "Exercice 11",
-            "description": "<img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" />\r\n\r\n**OK, c'est légèrement différent. Peux-tu le faire en seulement six\r\nblocs ?**\r\n",
+            "description": "<p><img src=\"01_maze/maze/small_static_avatar.png\" height=\"40\" alt=\"image\" /></p>\r\n<p><strong>OK, c'est légèrement différent. Peux-tu le faire en seulement six blocs ?</strong></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1454,7 +1454,7 @@
         },
         {
             "title": "Exercice 1",
-            "description": "Termine le code pour dessiner ces triangles. Le code pour dessiner un\r\ntriangle est déjà fait pour toi. Indice : les 3 triangles sont dans une\r\nrotation de 360 degrés.\r\n",
+            "description": "<p>Termine le code pour dessiner ces triangles. Le code pour dessiner un triangle est déjà fait pour toi. Indice : les 3 triangles sont dans une rotation de 360 degrés.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1506,7 +1506,7 @@
         },
         {
             "title": "Exercice 2",
-            "description": "Maintenant imbrique cette boucle à l'intérieur d'une autre boucle pour\r\ndessiner 10 triangles. C'est ce qu'on appelle une boucle imbriquée.\r\nIndice : les 10 triangles sont toujours dans une rotation de 360 degrés.\r\n",
+            "description": "<p>Maintenant imbrique cette boucle à l'intérieur d'une autre boucle pour dessiner 10 triangles. C'est ce qu'on appelle une boucle imbriquée. Indice : les 10 triangles sont toujours dans une rotation de 360 degrés.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1558,7 +1558,7 @@
         },
         {
             "title": "Exercice 3",
-            "description": "Maintenant, crée un soleil avec le code d'un petit triangle, en\r\nutilisant une boucle imbriquée.\r\n",
+            "description": "<p>Maintenant, crée un soleil avec le code d'un petit triangle, en utilisant une boucle imbriquée.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1610,7 +1610,7 @@
         },
         {
             "title": "Exercice 4",
-            "description": "Boucle ce dessin 6 fois. De combien as-tu besoin de tourner à chaque\r\nfois ?\r\n\r\nIndice : Combien font 360 divisé par 6 ?\r\n",
+            "description": "<p>Boucle ce dessin 6 fois. De combien as-tu besoin de tourner à chaque fois ?</p>\r\n<p>Indice : Combien font 360 divisé par 6 ?</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1662,7 +1662,7 @@
         },
         {
             "title": "Exercice 5",
-            "description": "Dessine ces 36 triangles avec une boucle imbriquée\r\n",
+            "description": "<p>Dessine ces 36 triangles avec une boucle imbriquée</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1714,7 +1714,7 @@
         },
         {
             "title": "Exercice 1",
-            "description": "Utilise une boucle pour recueillir tout le nectar.\r\n",
+            "description": "<p>Utilise une boucle pour recueillir tout le nectar.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1766,7 +1766,7 @@
         },
         {
             "title": "Exercice 2",
-            "description": "Recueille tout le nectar de chaque fleur. Utilise une boucle imbriquée.\r\n",
+            "description": "<p>Recueille tout le nectar de chaque fleur. Utilise une boucle imbriquée.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1822,7 +1822,7 @@
         },
         {
             "title": "Exercice 3",
-            "description": "Recueille tout le nectar à l’aide d’une boucle imbriquée.\r\n",
+            "description": "<p>Recueille tout le nectar à l’aide d’une boucle imbriquée.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1878,7 +1878,7 @@
         },
         {
             "title": "Exercice 4",
-            "description": "Ces fleurs pourpres ont une quantité inconnue de nectar. Utilise une\r\nboucle «Tant que nectar» pour recueillir tout le nectar. Cette boucle\r\ns'exécutera tant que la condition est vraie, dans ce cas «Nectar &gt;\r\n0».\r\n",
+            "description": "<p>Ces fleurs pourpres ont une quantité inconnue de nectar. Utilise une boucle «Tant que nectar» pour recueillir tout le nectar. Cette boucle s'exécutera tant que la condition est vraie, dans ce cas «Nectar &gt; 0».</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1938,7 +1938,7 @@
         },
         {
             "title": "Exercice 5",
-            "description": "Mets cette boucle dans une autre boucle pour créer une boucle imbriquée\r\net recueillir tout le nectar des fleurs.\r\n",
+            "description": "<p>Mets cette boucle dans une autre boucle pour créer une boucle imbriquée et recueillir tout le nectar des fleurs.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1998,7 +1998,7 @@
         },
         {
             "title": "Exercice 6",
-            "description": "Recueille tout le nectar de ces fleurs en imbriquant une boucle « Tant\r\nque » à l'intérieur d’un bloc « Répéter ».\r\n",
+            "description": "<p>Recueille tout le nectar de ces fleurs en imbriquant une boucle « Tant que » à l'intérieur d’un bloc « Répéter ».</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2058,7 +2058,7 @@
         },
         {
             "title": "Exercice 7",
-            "description": "Recueille tout le nectar et fabrique tout le miel en utilisant des\r\nboucles.\r\n",
+            "description": "<p>Recueille tout le nectar et fabrique tout le miel en utilisant des boucles.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2118,7 +2118,7 @@
         },
         {
             "title": "Exercice 1",
-            "description": "Termine de dessiner la boîte. (Chaque ligne a une longueur de 250\r\npixels)\r\n",
+            "description": "<p>Termine de dessiner la boîte. (Chaque ligne a une longueur de 250 pixels)</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2174,7 +2174,7 @@
         },
         {
             "title": "Exercice 2",
-            "description": "Ce parterre de fleurs rectangulaire a un périmètre de 600 pixels. Le\r\ncôté le plus long a une longueur de 200 pixels. Dessine le rectangle.\r\nRemarque : Tu ne dois pas repasser sur les lignes des fleurs, uniquement\r\ndessiner le rectangle\r\n",
+            "description": "<p>Ce parterre de fleurs rectangulaire a un périmètre de 600 pixels. Le côté le plus long a une longueur de 200 pixels. Dessine le rectangle. Remarque : Tu ne dois pas repasser sur les lignes des fleurs, uniquement dessiner le rectangle</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2230,7 +2230,7 @@
         },
         {
             "title": "Exercice 3",
-            "description": "Essaie le code qui est déjà présent pour comprendre ce qu'il fait.\r\nEnsuite, complète-le pour résoudre l'exercice.\r\n",
+            "description": "<p>Essaie le code qui est déjà présent pour comprendre ce qu'il fait. Ensuite, complète-le pour résoudre l'exercice.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2286,7 +2286,7 @@
         },
         {
             "title": "Exercice 4",
-            "description": "Combien y a-t-il de degrés dans un cercle ? Utilise un boucle pour\r\ncompléter le dessin\r\n",
+            "description": "<p>Combien y a-t-il de degrés dans un cercle ? Utilise un boucle pour compléter le dessin</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2342,7 +2342,7 @@
         },
         {
             "title": "Exercice 5",
-            "description": "Quel angle doit-tu utiliser ?\r\n",
+            "description": "<p>Quel angle doit-tu utiliser ?</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2398,7 +2398,7 @@
         },
         {
             "title": "Exercice 6",
-            "description": "La ligne médiane d’un terrain de football est perpendiculaire à ses\r\nlignes de touche. Ce terrain a un périmètre de 800 pixels et il est long\r\nde 240 pixels. Quelle est sa largeur ? Trace les limites et la ligne\r\nmédiane.\r\n",
+            "description": "<p>La ligne médiane d’un terrain de football est perpendiculaire à ses lignes de touche. Ce terrain a un périmètre de 800 pixels et il est long de 240 pixels. Quelle est sa largeur ? Trace les limites et la ligne médiane.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2454,7 +2454,7 @@
         },
         {
             "title": "Exercice 7",
-            "description": "Dessine l'autre moitié pour que le dessin soit symétrique. Les triangles\r\nsont équilatéraux et mesurent 50 pixels de long.\r\n",
+            "description": "<p>Dessine l'autre moitié pour que le dessin soit symétrique. Les triangles sont équilatéraux et mesurent 50 pixels de long.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2514,7 +2514,7 @@
         },
         {
             "title": "Exercice 8",
-            "description": "Complète les lignes vertes. Les lignes ont 250 pixels de long et sont à\r\n15 pixels l’une de l’autre.\r\n",
+            "description": "<p>Complète les lignes vertes. Les lignes ont 250 pixels de long et sont à 15 pixels l’une de l’autre.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2570,7 +2570,7 @@
         },
         {
             "title": "Exercice 9",
-            "description": "Dessin libre ! Tu peux appuyer sur le bouton vert pour regarder le\r\nrésultat et soumettre la tâche pour sauvegarder tes dessins.\r\n",
+            "description": "<p>Dessin libre ! Tu peux appuyer sur le bouton vert pour regarder le résultat et soumettre la tâche pour sauvegarder tes dessins.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2618,7 +2618,7 @@
         },
         {
             "title": "Exercice 1",
-            "description": "Dessine les verres carrés. Astuce : le pont entre les verres fait 25\r\npixels de moins que la longueur du carré.\r\n",
+            "description": "<p>Dessine les verres carrés. Astuce : le pont entre les verres fait 25 pixels de moins que la longueur du carré.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2674,7 +2674,7 @@
         },
         {
             "title": "Exercice 2",
-            "description": "Les fonctions te permettent de définir de nouveaux blocs ! Nous avons\r\ndéplacé les blocs pour dessiner un carré dans une fonction appelée\r\n«Dessiner un carré». Peut-tu utiliser la fonction «Dessiner un carré»\r\npour créer les lunettes ? Les carrés sont toujours à 50 pixels l'un de\r\nl'autre.\r\n",
+            "description": "<p>Les fonctions te permettent de définir de nouveaux blocs ! Nous avons déplacé les blocs pour dessiner un carré dans une fonction appelée «Dessiner un carré». Peut-tu utiliser la fonction «Dessiner un carré» pour créer les lunettes ? Les carrés sont toujours à 50 pixels l'un de l'autre.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2734,7 +2734,7 @@
         },
         {
             "title": "Exercice 3",
-            "description": "Utilise le bloc \"répéter\" pour dessiner trois carrés\r\n",
+            "description": "<p>Utilise le bloc \"répéter\" pour dessiner trois carrés</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2794,7 +2794,7 @@
         },
         {
             "title": "Exercice 4",
-            "description": "Nous avons renommé la fonction «Dessiner un carré» en «Dessiner un\r\nhexagone», mais elle ne dessine encore que des carrés ! Peux-tu modifier\r\nla fonction «Dessine un hexagone» pour dessiner un hexagone avec des\r\ncôtés de 50 pixels et dessiner l'image en utilisant la fonction ?\r\n",
+            "description": "<p>Nous avons renommé la fonction «Dessiner un carré» en «Dessiner un hexagone», mais elle ne dessine encore que des carrés ! Peux-tu modifier la fonction «Dessine un hexagone» pour dessiner un hexagone avec des côtés de 50 pixels et dessiner l'image en utilisant la fonction ?</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2858,7 +2858,7 @@
         },
         {
             "title": "Exercice 5",
-            "description": "Les fonctions sont vraiment très biens pour dessiner des choses\r\ncomplexes plusieurs fois. Peux-tu utiliser la fonction «Dessiner une\r\nfleur» pour remplir le reste du parterre ? (Indice : les plantes sont\r\nséparées les unes des autres d’une longueur de 100 pixels)\r\n",
+            "description": "<p>Les fonctions sont vraiment très biens pour dessiner des choses complexes plusieurs fois. Peux-tu utiliser la fonction «Dessiner une fleur» pour remplir le reste du parterre ? (Indice : les plantes sont séparées les unes des autres d’une longueur de 100 pixels)</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2918,7 +2918,7 @@
         },
         {
             "title": "Exercice 1",
-            "description": "Récolte tout le nectar de chaque fleur.\r\n",
+            "description": "<p>Récolte tout le nectar de chaque fleur.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2970,7 +2970,7 @@
         },
         {
             "title": "Exercice 2",
-            "description": "Les fonctions sont des blocs de code qui effectuent une tâche. Utilise\r\nla fonction « Obtenir 5 » pour obtenir 5 nectars à la fois. Veille\r\négalement à utiliser une boucle pour obtenir un compte de bloc idéal.\r\n",
+            "description": "<p>Les fonctions sont des blocs de code qui effectuent une tâche. Utilise la fonction « Obtenir 5 » pour obtenir 5 nectars à la fois. Veille également à utiliser une boucle pour obtenir un compte de bloc idéal.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3026,7 +3026,7 @@
         },
         {
             "title": "Exercice 3",
-            "description": "La fonction «Déplacer et obtenir le nectar» déplace l'abeille, recueille\r\nle nectar et renvoie l'abeille là où elle a commencé. Utilise-la pour\r\nrécolter tout le nectar.\r\n",
+            "description": "<p>La fonction «Déplacer et obtenir le nectar» déplace l'abeille, recueille le nectar et renvoie l'abeille là où elle a commencé. Utilise-la pour récolter tout le nectar.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3082,7 +3082,7 @@
         },
         {
             "title": "Exercice 4",
-            "description": "Il y a maintenant davantage de nectar dans les fleurs. Modifie la\r\nfonction donnée afin qu'elle recueille 4 nectars et utilise-la pour\r\nrecueillir l'ensemble du nectar de la fleur.\r\n",
+            "description": "<p>Il y a maintenant davantage de nectar dans les fleurs. Modifie la fonction donnée afin qu'elle recueille 4 nectars et utilise-la pour recueillir l'ensemble du nectar de la fleur.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3138,7 +3138,7 @@
         },
         {
             "title": "Exercice 5",
-            "description": "Crée ta propre fonction qui obtiendra 7 nectars, se déplacera vers\r\nl'avant et fera 7 unités de miel. Utilise la fonction pour recueillir le\r\nnectar de chaque fleur et fabriquer du miel dans chaque gâteau de miel.\r\n",
+            "description": "<p>Crée ta propre fonction qui obtiendra 7 nectars, se déplacera vers l'avant et fera 7 unités de miel. Utilise la fonction pour recueillir le nectar de chaque fleur et fabriquer du miel dans chaque gâteau de miel.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3198,7 +3198,7 @@
         },
         {
             "title": "Exercice 6",
-            "description": "Les fleurs pourpres peuvent avoir 1 ou 0 nectar. Crée une fonction qui\r\nrécolte du nectar seulement sur les fleurs pourpres qui en ont.\r\n",
+            "description": "<p>Les fleurs pourpres peuvent avoir 1 ou 0 nectar. Crée une fonction qui récolte du nectar seulement sur les fleurs pourpres qui en ont.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3262,7 +3262,7 @@
         },
         {
             "title": "Exercice 1",
-            "description": "L'abeille ne peut pas savoir ce qui se trouve sous le nuage. Recueille\r\nle nectar seulement sur les fleurs, mais vérifie d'abord si c'est une\r\nfleur ou un gâteau de miel.\r\n",
+            "description": "<p>L'abeille ne peut pas savoir ce qui se trouve sous le nuage. Recueille le nectar seulement sur les fleurs, mais vérifie d'abord si c'est une fleur ou un gâteau de miel.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3318,7 +3318,7 @@
         },
         {
             "title": "Exercice 2",
-            "description": "L'abeille veut seulement du nectar. Tous les objets ne sont pas des\r\nfleurs, alors vérifie sous CHAQUE NUAGE pour voir s’il s’y cache une\r\nfleur. Si c'est le cas, alors tu peux recueillir du nectar.\r\n",
+            "description": "<p>L'abeille veut seulement du nectar. Tous les objets ne sont pas des fleurs, alors vérifie sous CHAQUE NUAGE pour voir s’il s’y cache une fleur. Si c'est le cas, alors tu peux recueillir du nectar.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3374,7 +3374,7 @@
         },
         {
             "title": "Exercice 3",
-            "description": "L'objet inconnu est soit une fleur, soit un gâteau de miel. Utilise le\r\nbloc «Si/Sinon» pour récupérer le nectar si c'est une fleur, ou pour\r\nfabriquer du miel (parce que c'est un gâteau de miel).\r\n",
+            "description": "<p>L'objet inconnu est soit une fleur, soit un gâteau de miel. Utilise le bloc «Si/Sinon» pour récupérer le nectar si c'est une fleur, ou pour fabriquer du miel (parce que c'est un gâteau de miel).</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3434,7 +3434,7 @@
         },
         {
             "title": "Exercice 4",
-            "description": "Cette fleur pourpre peut avoir 3, 2 ou 1 nectar(s). Tu vas de nouveau\r\navoir besoin du bloc \"si\" et d'une boucle. Tous les éléments sont sur le\r\nplan de travail, mais pas emboîtés !\r\n",
+            "description": "<p>Cette fleur pourpre peut avoir 3, 2 ou 1 nectar(s). Tu vas de nouveau avoir besoin du bloc \"si\" et d'une boucle. Tous les éléments sont sur le plan de travail, mais pas emboîtés !</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3494,7 +3494,7 @@
         },
         {
             "title": "Exercice 5",
-            "description": "Écris à l'intérieur de la fonction «Vérifier la fleur et fabriquer du\r\nmiel». Ta fonction doit vérifier si la fleur pourpre a 1, 2 ou 3 nectars\r\net recueillir l'ensemble du nectar. Ensuite, avance et fabrique du miel.\r\n",
+            "description": "<p>Écris à l'intérieur de la fonction «Vérifier la fleur et fabriquer du miel». Ta fonction doit vérifier si la fleur pourpre a 1, 2 ou 3 nectars et recueillir l'ensemble du nectar. Ensuite, avance et fabrique du miel.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3554,7 +3554,7 @@
         },
         {
             "title": "Exercice 1",
-            "description": "Utilise le bloc « Répéter jusqu'à » pour amener le zombie au tournesol.\r\n",
+            "description": "<p>Utilise le bloc « Répéter jusqu'à » pour amener le zombie au tournesol.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3606,7 +3606,7 @@
         },
         {
             "title": "Exercice 2",
-            "description": "Utilise le bloc « Si » pour me laisser décider quand tourner. Indice:\r\nici, tu n’as besoin que d'un bloc supplémentaire, mais regarde bien\r\ncomment nous avons fait afin de pouvoir le faire toi-même la prochaine\r\nfois.\r\n",
+            "description": "<p>Utilise le bloc « Si » pour me laisser décider quand tourner. Indice: ici, tu n’as besoin que d'un bloc supplémentaire, mais regarde bien comment nous avons fait afin de pouvoir le faire toi-même la prochaine fois.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3662,7 +3662,7 @@
         },
         {
             "title": "Exercice 3",
-            "description": "Même chose que le puzzle précédent, mais tu dois te rappeler comment tu\r\nas utilisé le bloc «Si» et le bloc « Répéter » ensemble.\r\n",
+            "description": "<p>Même chose que le puzzle précédent, mais tu dois te rappeler comment tu as utilisé le bloc «Si» et le bloc « Répéter » ensemble.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3718,7 +3718,7 @@
         },
         {
             "title": "Exercice 4",
-            "description": "Utilise le bloc \"si chemin\" encore une fois pour t'entraîner - ce n'est\r\npas très différent, mais attention aux plantes carnivores!\r\n",
+            "description": "<p>Utilise le bloc \"si chemin\" encore une fois pour t'entraîner - ce n'est pas très différent, mais attention aux plantes carnivores!</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3774,7 +3774,7 @@
         },
         {
             "title": "Exercice 5",
-            "description": "Le blocs « Si/Sinon » vérifie une condition et puis fait une chose OU\r\nune autre. Pour amener le personnage au tournesol, essaie d'utiliser ce\r\nnouveau bloc.\r\n",
+            "description": "<p>Le blocs « Si/Sinon » vérifie une condition et puis fait une chose OU une autre. Pour amener le personnage au tournesol, essaie d'utiliser ce nouveau bloc.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3830,7 +3830,7 @@
         },
         {
             "title": "Exercice 6",
-            "description": "Voici un autre exercice avec le bloc « Si/Sinon », sans aide cette fois\r\n!\r\n",
+            "description": "<p>Voici un autre exercice avec le bloc « Si/Sinon », sans aide cette fois !</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3886,7 +3886,7 @@
         },
         {
             "title": "Exercice 7",
-            "description": "Peux tu rajouter juste 3 blocs pour aider le zombie à résoudre un\r\nlabyrinthe plus complexe ?\r\n\r\nSi tu le fais bien, il peut parcourir n'importe quel chemin sinueux peu\r\nimporte la longueur!\r\n",
+            "description": "<p>Peux tu rajouter juste 3 blocs pour aider le zombie à résoudre un labyrinthe plus complexe ?</p>\r\n<p>Si tu le fais bien, il peut parcourir n'importe quel chemin sinueux peu importe la longueur!</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3986,7 +3986,7 @@
         },
         {
             "title": "1. Le plus léger (blocs normaux)",
-            "description": "Avant de trier toute une liste, attaquons-nous à un problème plus simple\r\n: trouver le plus petit élément.\r\n\r\nPeux-tu créer un algorithme qui retourne le plus petit élément de la\r\nliste avec ces blocs ?\r\n\r\nAttention, souviens-toi bien que la liste ne sera pas dans l'ordre !\r\n",
+            "description": "<p>Avant de trier toute une liste, attaquons-nous à un problème plus simple : trouver le plus petit élément.</p>\r\n<p>Peux-tu créer un algorithme qui retourne le plus petit élément de la liste avec ces blocs ?</p>\r\n<p>Attention, souviens-toi bien que la liste ne sera pas dans l'ordre !</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4025,7 +4025,7 @@
         },
         {
             "title": "1. Le plus léger (blocs custom)",
-            "description": "Avant de trier toute une liste, attaquons-nous à un problème plus simple\r\n: trouver le plus petit élément.\r\n\r\nPeux-tu créer un algorithme qui retourne le plus petit élément de la\r\nliste avec ces blocs ?\r\n\r\nAttention, souviens-toi bien que la liste ne sera pas dans l'ordre ! Tu\r\npeux appuyer sur le bouton vert en haut à gauche pour voir ce que tu\r\ncode fait : la bouteille A est en rouge et la B en bleu. Est-ce que la\r\nplus petite valeur est bien en rouge à la fin de l'animation ?\r\n",
+            "description": "<p>Avant de trier toute une liste, attaquons-nous à un problème plus simple : trouver le plus petit élément.</p>\r\n<p>Peux-tu créer un algorithme qui retourne le plus petit élément de la liste avec ces blocs ?</p>\r\n<p>Attention, souviens-toi bien que la liste ne sera pas dans l'ordre ! Tu peux appuyer sur le bouton vert en haut à gauche pour voir ce que tu code fait : la bouteille A est en rouge et la B en bleu. Est-ce que la plus petite valeur est bien en rouge à la fin de l'animation ?</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4069,7 +4069,7 @@
         },
         {
             "title": "2. Questions - le plus léger",
-            "description": "Peux-tu compter les comparaisons nécéssaires pour trouver les éléments\r\nles plus légers des listes suivantes ?\r\n\r\nAttention, souviens-toi que l'ordinateur ne peut pas se rendre compte\r\nqu'il a l'élément le plus léger avant de les avoir tous examinés !\r\n",
+            "description": "<p>Peux-tu compter les comparaisons nécéssaires pour trouver les éléments les plus légers des listes suivantes ?</p>\r\n<p>Attention, souviens-toi que l'ordinateur ne peut pas se rendre compte qu'il a l'élément le plus léger avant de les avoir tous examinés !</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4108,7 +4108,7 @@
         },
         {
             "title": "3. Tri par sélection",
-            "description": "Maintenant, utilise l'algorithme *le\\_plus\\_léger* (il est déjà fait\r\npour toi) pour trier la liste par sélection.\r\n\r\nTu peux cliquer sur le bouton vers à gauche pour voir une animation qui\r\ncorrespond à ce que fait le code : l'élément \"le plus léger jusqu'ici\"\r\nest en rouge, et celui qu'on compare, en bleu.\r\n\r\nUne fois que tu as l'élement le plus léger, place-le dans une nouvelle\r\nliste et recommence.\r\n",
+            "description": "<p>Maintenant, utilise l'algorithme <em>le_plus_léger</em> (il est déjà fait pour toi) pour trier la liste par sélection.</p>\r\n<p>Tu peux cliquer sur le bouton vers à gauche pour voir une animation qui correspond à ce que fait le code : l'élément \"le plus léger jusqu'ici\" est en rouge, et celui qu'on compare, en bleu.</p>\r\n<p>Une fois que tu as l'élement le plus léger, place-le dans une nouvelle liste et recommence.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4152,7 +4152,7 @@
         },
         {
             "title": "4. Questions - tri par sélection",
-            "description": "Maintenant, peux-tu compter les comparaisons nécéssaires pour trier en\r\nentier les listes suivantes ?\r\n",
+            "description": "<p>Maintenant, peux-tu compter les comparaisons nécéssaires pour trier en entier les listes suivantes ?</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4191,7 +4191,7 @@
         },
         {
             "title": "7. Tri par insertion",
-            "description": "Le tri par insertion est celui que tu fais naturellement si tu trie un\r\npaquet de carte : tu prends les cartes une à une et les mets à leur\r\nplace.\r\n\r\nRegarde l'animation et compte les comparaisons. Est-ce mieux ou moins\r\nbien que le tri par sélection ? Est-ce que le nombre de comparaison est\r\ntoujours le même ?\r\n",
+            "description": "<p>Le tri par insertion est celui que tu fais naturellement si tu trie un paquet de carte : tu prends les cartes une à une et les mets à leur place.</p>\r\n<p>Regarde l'animation et compte les comparaisons. Est-ce mieux ou moins bien que le tri par sélection ? Est-ce que le nombre de comparaison est toujours le même ?</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4235,7 +4235,7 @@
         },
         {
             "title": "7.5 Tri par insertion - pire cas",
-            "description": "Ici, tu peux voir le pire cas du tri par insertion. Combien fait-il de\r\ncomparaisons ? Est-ce similaire au tri par sélection ?\r\n",
+            "description": "<p>Ici, tu peux voir le pire cas du tri par insertion. Combien fait-il de comparaisons ? Est-ce similaire au tri par sélection ?</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4279,7 +4279,7 @@
         },
         {
             "title": "Tri rapide",
-            "description": "Le tri rapide est un peu plus compliqué à comprendre, mais utilise un\r\nprincipe très courant en informatique : diviser pour mieux régner.\r\nPlutôt que d'essayer de trier toute la liste d'un coup, on prend un\r\nélément au hasard (le pivot), et on met les autres éléments avant s'ils\r\nsont plus petits, et après s'ils sont plus grands, sans ce soucier de\r\nleur ordre. Ensuite, on recommence avec un autre pivot, jusqu'à-ce que\r\nla liste soit triée.\r\n\r\nCette fois-ci, l'animation est un peu plus compliquée. Peut-tu compter\r\nles comparaisons ?\r\n",
+            "description": "<p>Le tri rapide est un peu plus compliqué à comprendre, mais utilise un principe très courant en informatique : diviser pour mieux régner. Plutôt que d'essayer de trier toute la liste d'un coup, on prend un élément au hasard (le pivot), et on met les autres éléments avant s'ils sont plus petits, et après s'ils sont plus grands, sans ce soucier de leur ordre. Ensuite, on recommence avec un autre pivot, jusqu'à-ce que la liste soit triée.</p>\r\n<p>Cette fois-ci, l'animation est un peu plus compliquée. Peut-tu compter les comparaisons ?</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4327,6 +4327,6 @@
         "1": "Misconception",
         "2": "autres"
     },
-    "extraction_date": "2019-12-18T16:14:29.127Z",
+    "extraction_date": "2020-03-04T17:34:50.097Z",
     "url": "https://github.com/CelineDknp/JobBlockly"
 }

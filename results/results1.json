@@ -2,7 +2,7 @@
     "exercises": [
         {
             "title": "Absolute value",
-            "description": "The absolute value of a number is defined as *|n| = n* if *n &gt;= 0*,\r\n*|n| = -n* else.\r\n",
+            "description": "<p>The absolute value of a number is defined as <em>|n| = n</em> if <em>n &gt;= 0</em>, <em>|n| = -n</em> else.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -51,7 +51,7 @@
         },
         {
             "title": "Advanced queue",
-            "description": "You must implement the `enqueue` and `dequeue` functions of a <span\r\nclass=\"title-ref\">Queue</span> that is implemented as a simple circular\r\nlist. This [Wikipedia\r\npage](https://en.wikipedia.org/wiki/Linked_list#Circularly_linked_vs._linearly_linked)\r\ndescribes such a list as follows:\r\n\r\n\"With a circular list, a pointer to the last node gives easy access also\r\nto the first node, by following one link. Thus, in applications that\r\nrequire access to both ends of the list (e.g., in the implementation of\r\na queue), a circular structure allows one to handle the structure by a\r\nsingle pointer, instead of two.\"\r\n\r\n![image](https://upload.wikimedia.org/wikipedia/commons/d/df/Circularly-linked-list.svg)\r\n\r\nAssume that the head of the queue is the leftmost node and that the tail\r\nof the queue is the rightmost node. In the previous example, the head\r\nand the tail are respectively `12` and `37`. So in this case, the only\r\npointer you can use will point to the `37` node.\r\n\r\nYou can use the following datastructures for this exercise:\r\n\r\n``` c\r\ntypedef struct node{\r\n  struct node* next;\r\n  int value;\r\n} node_t;\r\n\r\ntypedef struct queue{\r\n  struct node* tail;\r\n  int size;\r\n} queue_t  ;\r\n```\r\n",
+            "description": "<p>You must implement the <code>enqueue</code> and <code>dequeue</code> functions of a <span class=\"title-ref\">Queue</span> that is implemented as a simple circular list. This <a href=\"https://en.wikipedia.org/wiki/Linked_list#Circularly_linked_vs._linearly_linked\">Wikipedia page</a> describes such a list as follows:</p>\r\n<p>\"With a circular list, a pointer to the last node gives easy access also to the first node, by following one link. Thus, in applications that require access to both ends of the list (e.g., in the implementation of a queue), a circular structure allows one to handle the structure by a single pointer, instead of two.\"</p>\r\n<p><img src=\"https://upload.wikimedia.org/wikipedia/commons/d/df/Circularly-linked-list.svg\" alt=\"image\" /></p>\r\n<p>Assume that the head of the queue is the leftmost node and that the tail of the queue is the rightmost node. In the previous example, the head and the tail are respectively <code>12</code> and <code>37</code>. So in this case, the only pointer you can use will point to the <code>37</code> node.</p>\r\n<p>You can use the following datastructures for this exercise:</p>\r\n<pre class=\"c\"><code>typedef struct node{\r\n  struct node* next;\r\n  int value;\r\n} node_t;\r\n\r\ntypedef struct queue{\r\n  struct node* tail;\r\n  int size;\r\n} queue_t  ;</code></pre>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -110,7 +110,7 @@
         },
         {
             "title": "ArrayList",
-            "description": "Vous devez modifier une librairie qui implémente une ArrayList en y\r\najoutant une fonction. Cette ArrayList s'utilise comme suit\r\n\r\n``` c\r\nint main(void) {\r\n     struct array_list *head = arraylist_init((size_t) 2, (size_t) sizeof(int));\r\n     int first = 5;\r\n     int second = 6;\r\n     int third = 7;\r\n     int tmp;\r\n\r\n     int ret;\r\n\r\n     if (!head)\r\n             return 0;\r\n\r\n     set_element(head, 0, (void *)&first);\r\n     set_element(head, 1, (void *)&second);\r\n\r\n     get_element(head, 1, (void *)&tmp);\r\n     // tmp contient 6\r\n     add_tail(head, (void *)&third);\r\n     get_element(head, 2, (void *)&tmp);\r\n     // tmp contient 7\r\n     printf(\"array-list size: %d element-size %d\\n\", get_size(head), get_elem_size(head));\r\n     // affiche array-list size: 3 element-size 4\r\n     array_list_destroy(head);\r\n     return 0;\r\n}\r\n```\r\n\r\nLe syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants : -\r\n<http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes) -\r\n<http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes) -\r\n<http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions\r\nlibrairies)\r\n",
+            "description": "<p>Vous devez modifier une librairie qui implémente une ArrayList en y ajoutant une fonction. Cette ArrayList s'utilise comme suit</p>\r\n<pre class=\"c\"><code>int main(void) {\r\n     struct array_list *head = arraylist_init((size_t) 2, (size_t) sizeof(int));\r\n     int first = 5;\r\n     int second = 6;\r\n     int third = 7;\r\n     int tmp;\r\n\r\n     int ret;\r\n\r\n     if (!head)\r\n             return 0;\r\n\r\n     set_element(head, 0, (void *)&amp;first);\r\n     set_element(head, 1, (void *)&amp;second);\r\n\r\n     get_element(head, 1, (void *)&amp;tmp);\r\n     // tmp contient 6\r\n     add_tail(head, (void *)&amp;third);\r\n     get_element(head, 2, (void *)&amp;tmp);\r\n     // tmp contient 7\r\n     printf(&quot;array-list size: %d element-size %d\\n&quot;, get_size(head), get_elem_size(head));\r\n     // affiche array-list size: 3 element-size 4\r\n     array_list_destroy(head);\r\n     return 0;\r\n}</code></pre>\r\n<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n<p>Les pages de manuel sont accessibles depuis les URLs suivants : - <a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes) - <a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes) - <a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions librairies)</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -169,7 +169,7 @@
         },
         {
             "title": "Get an array from a binary file using mmap",
-            "description": "Given a file containing a linked list of the structure *student\\_t*\r\nfollowing, you have to write a function to load the entire linked list\r\nfrom the file and to return a pointer to the head of this linked list.\r\nAssume that, in the file, if **a** is followed by **b**, you will have\r\n`a->next = b`.\r\n\r\n``` c\r\ntypedef struct student{\r\n    struct student* next;\r\n    int noma;\r\n} student_t;\r\n```\r\n\r\nIn this exercice, you **cannot** use *fopen*, *read*, *fread*, *fgetc*,\r\n*fgets*, which means that you must use\r\n[mmap(2).](https://sites.uclouvain.be/SystInfo/manpages/man2/mmap.2.html)\r\n\r\nIn case of error (using malloc), you have to free **all** the memory you\r\nhave allocated.\r\n",
+            "description": "<p>Given a file containing a linked list of the structure <em>student_t</em> following, you have to write a function to load the entire linked list from the file and to return a pointer to the head of this linked list. Assume that, in the file, if <strong>a</strong> is followed by <strong>b</strong>, you will have <code>a-&gt;next = b</code>.</p>\r\n<pre class=\"c\"><code>typedef struct student{\r\n    struct student* next;\r\n    int noma;\r\n} student_t;</code></pre>\r\n<p>In this exercice, you <strong>cannot</strong> use <em>fopen</em>, <em>read</em>, <em>fread</em>, <em>fgetc</em>, <em>fgets</em>, which means that you must use <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man2/mmap.2.html\">mmap(2).</a></p>\r\n<p>In case of error (using malloc), you have to free <strong>all</strong> the memory you have allocated.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -235,7 +235,7 @@
         },
         {
             "title": "Traduction de code assembleur",
-            "description": "Le syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants :\r\n\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions\r\n    librairies)\r\n",
+            "description": "<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n<p>Les pages de manuel sont accessibles depuis les URLs suivants :</p>\r\n<ul>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions librairies)</li>\r\n</ul>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -294,7 +294,7 @@
         },
         {
             "title": "Traduction de code assembleur",
-            "description": "Le syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants :\r\n\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions des\r\n    librairies)\r\n",
+            "description": "<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n<p>Les pages de manuel sont accessibles depuis les URLs suivants :</p>\r\n<ul>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions des librairies)</li>\r\n</ul>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -353,7 +353,7 @@
         },
         {
             "title": "Traduction de code assembleur",
-            "description": "Le syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants :  \r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions des\r\n    librairies)\r\n\r\n**Attention:** veuillez utiliser la version **HTML** du syllabus\r\n",
+            "description": "<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n<dl>\r\n<dt>Les pages de manuel sont accessibles depuis les URLs suivants :</dt>\r\n<dd><ul>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions des librairies)</li>\r\n</ul>\r\n</dd>\r\n</dl>\r\n<p><strong>Attention:</strong> veuillez utiliser la version <strong>HTML</strong> du syllabus</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -412,7 +412,7 @@
         },
         {
             "title": "Traduction de code assembleur",
-            "description": "Le syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants :  \r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions des\r\n    librairies)\r\n\r\n**Attention:** veuillez utiliser la version **HTML** du syllabus\r\n",
+            "description": "<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n<dl>\r\n<dt>Les pages de manuel sont accessibles depuis les URLs suivants :</dt>\r\n<dd><ul>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions des librairies)</li>\r\n</ul>\r\n</dd>\r\n</dl>\r\n<p><strong>Attention:</strong> veuillez utiliser la version <strong>HTML</strong> du syllabus</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -471,7 +471,7 @@
         },
         {
             "title": "Simple linked list",
-            "description": "We ask you to write two simple functions that are needed to implement a\r\nsimple linked list.\r\n\r\n``` c\r\n/**\r\n* Structure node\r\n*\r\n* @next: pointer to the next node in the list, NULL if last node_t\r\n* @value: value stored in the node\r\n*/\r\ntypedef struct node {\r\n  struct node *next;\r\n  int value;\r\n} node_t;\r\n\r\n/**\r\n* Structure list\r\n*\r\n* @first: first node of the list, NULL if list is empty\r\n* @size: number of nodes in the list\r\n*/\r\ntypedef struct list {\r\n  struct node *first;\r\n  int size;\r\n} list_t;\r\n```\r\n\r\n**In your functions, you cannot use the function**\r\n[calloc(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/malloc.3.html)\r\n",
+            "description": "<p>We ask you to write two simple functions that are needed to implement a simple linked list.</p>\r\n<pre class=\"c\"><code>/**\r\n* Structure node\r\n*\r\n* @next: pointer to the next node in the list, NULL if last node_t\r\n* @value: value stored in the node\r\n*/\r\ntypedef struct node {\r\n  struct node *next;\r\n  int value;\r\n} node_t;\r\n\r\n/**\r\n* Structure list\r\n*\r\n* @first: first node of the list, NULL if list is empty\r\n* @size: number of nodes in the list\r\n*/\r\ntypedef struct list {\r\n  struct node *first;\r\n  int size;\r\n} list_t;</code></pre>\r\n<p><strong>In your functions, you cannot use the function</strong> <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/malloc.3.html\">calloc(3)</a></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -534,7 +534,7 @@
         },
         {
             "title": "Bitwise operation: high order bits",
-            "description": "In this exercise, we will work with operation on bits. When we speak\r\nabout the position of a bit, index 0 corresponds to lowest order bit, 1\r\nto the second-lowest order bit, ...\r\n\r\nIn C source code, you can write a number in binary (base 2) by prefixing\r\nit via 0b., e.g. 0b11010 = 26.\r\n\r\nThis exercise will introduce some non-standard data types which\r\nguarantee that the variable has a fixed number of bits. Indeed, on some\r\nmachines, a *int* could use 2, 4 or 8 bytes. Hence, if we want to\r\nperform bitwise operations, we have to know first on how many bits we\r\nare working.\r\n\r\nFor this, C introduces a new class of variable types :\r\n\r\n-   *int8\\_t* (signed integer of 8 bits)\r\n-   *uint8\\_t* (unsigned integer of 8 bits)\r\n-   *uint16\\_t* (unsigned integer of 16 bits)\r\n\r\nYou can mix *uint* or *int* with bit-lengths 8, 16, 32 and 64). These\r\ntypes are defined in &lt;stdint.h&gt;\r\n",
+            "description": "<p>In this exercise, we will work with operation on bits. When we speak about the position of a bit, index 0 corresponds to lowest order bit, 1 to the second-lowest order bit, ...</p>\r\n<p>In C source code, you can write a number in binary (base 2) by prefixing it via 0b., e.g. 0b11010 = 26.</p>\r\n<p>This exercise will introduce some non-standard data types which guarantee that the variable has a fixed number of bits. Indeed, on some machines, a <em>int</em> could use 2, 4 or 8 bytes. Hence, if we want to perform bitwise operations, we have to know first on how many bits we are working.</p>\r\n<p>For this, C introduces a new class of variable types :</p>\r\n<ul>\r\n<li><em>int8_t</em> (signed integer of 8 bits)</li>\r\n<li><em>uint8_t</em> (unsigned integer of 8 bits)</li>\r\n<li><em>uint16_t</em> (unsigned integer of 16 bits)</li>\r\n</ul>\r\n<p>You can mix <em>uint</em> or <em>int</em> with bit-lengths 8, 16, 32 and 64). These types are defined in &lt;stdint.h&gt;</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -588,7 +588,7 @@
         },
         {
             "title": "Bitwise operation: extract low order bits",
-            "description": "In this exercise, we will work with operations on bits. When we speak\r\nabout the position of a bit, index 0 corresponds to lowest order bit, 1\r\nto the second-lowest order bit, ...\r\n\r\nIn C source code, you can write a number in binary (base 2) by prefixing\r\nit via 0b., e.g. `0b11010` = 26.\r\n\r\nThis exercise will introduce some non-standard data types which\r\nguarantee that the variable has a fixed number of bits. Indeed, on some\r\nmachines, a *int* could use 2, 4 or 8 bytes. Hence, if we want to\r\nperform bitwise operations, we have to know first on how many bits we\r\nare working.\r\n\r\nFor this, C introduces a new class of variable types :\r\n\r\n-   *int8\\_t* (signed integer of 8 bits)\r\n-   *uint8\\_t* (unsigned integer of 8 bits)\r\n-   *uint16\\_t* (unsigned integer of 16 bits)\r\n\r\nYou can mix *uint* or *int* with bit-lengths 8, 16, 32 and 64). These\r\ntypes are defined in &lt;stdint.h&gt;\r\n",
+            "description": "<p>In this exercise, we will work with operations on bits. When we speak about the position of a bit, index 0 corresponds to lowest order bit, 1 to the second-lowest order bit, ...</p>\r\n<p>In C source code, you can write a number in binary (base 2) by prefixing it via 0b., e.g. <code>0b11010</code> = 26.</p>\r\n<p>This exercise will introduce some non-standard data types which guarantee that the variable has a fixed number of bits. Indeed, on some machines, a <em>int</em> could use 2, 4 or 8 bytes. Hence, if we want to perform bitwise operations, we have to know first on how many bits we are working.</p>\r\n<p>For this, C introduces a new class of variable types :</p>\r\n<ul>\r\n<li><em>int8_t</em> (signed integer of 8 bits)</li>\r\n<li><em>uint8_t</em> (unsigned integer of 8 bits)</li>\r\n<li><em>uint16_t</em> (unsigned integer of 16 bits)</li>\r\n</ul>\r\n<p>You can mix <em>uint</em> or <em>int</em> with bit-lengths 8, 16, 32 and 64). These types are defined in &lt;stdint.h&gt;</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -642,7 +642,7 @@
         },
         {
             "title": "Bitwise operation: cycling bits",
-            "description": "In this exercise, we will work with operations on bits. When we speak\r\nabout the position of a bit, index 0 corresponds to lowest order bit, 1\r\nto the second-lowest order bit, ...\r\n\r\nIn C source code, you can write a number in binary (base 2) by prefixing\r\nit via 0b., e.g. 0b11010 = 26.\r\n\r\nThis exercise will introduce some non-standard data types which\r\nguarantee that the variable has a fixed number of bits. Indeed, on some\r\nmachines, a *int* could use 2, 4 or 8 bytes. Hence, if we want to\r\nperform bitwise operations, we have to know first on how many bits we\r\nare working.\r\n\r\nFor this, C introduces a new class of variable types :\r\n\r\n-   *int8\\_t* (signed integer of 8 bits)\r\n-   *uint8\\_t* (unsigned integer of 8 bits)\r\n-   *uint16\\_t* (unsigned integer of 16 bits)\r\n\r\nYou can mix *uint* or *int* with bit-lengths 8, 16, 32 and 64). These\r\ntypes are defined in &lt;stdint.h&gt;\r\n",
+            "description": "<p>In this exercise, we will work with operations on bits. When we speak about the position of a bit, index 0 corresponds to lowest order bit, 1 to the second-lowest order bit, ...</p>\r\n<p>In C source code, you can write a number in binary (base 2) by prefixing it via 0b., e.g. 0b11010 = 26.</p>\r\n<p>This exercise will introduce some non-standard data types which guarantee that the variable has a fixed number of bits. Indeed, on some machines, a <em>int</em> could use 2, 4 or 8 bytes. Hence, if we want to perform bitwise operations, we have to know first on how many bits we are working.</p>\r\n<p>For this, C introduces a new class of variable types :</p>\r\n<ul>\r\n<li><em>int8_t</em> (signed integer of 8 bits)</li>\r\n<li><em>uint8_t</em> (unsigned integer of 8 bits)</li>\r\n<li><em>uint16_t</em> (unsigned integer of 16 bits)</li>\r\n</ul>\r\n<p>You can mix <em>uint</em> or <em>int</em> with bit-lengths 8, 16, 32 and 64). These types are defined in &lt;stdint.h&gt;</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -696,7 +696,7 @@
         },
         {
             "title": "Bitwise operation: resetting the highest order bit",
-            "description": "In this exercise, we will work with operations on bits. When we speak\r\nabout the position of a bit, index 0 corresponds to lowest order bit, 1\r\nto the second-lowest order bit, ...\r\n\r\nIn C source code, you can write a number in binary (base 2) by prefixing\r\nit via 0b., e.g. 0b11010 = 26.\r\n\r\nThis exercise will introduce some non-standard data types which\r\nguarantee that the variable has a fixed number of bits. Indeed, on some\r\nmachines, a *int* could use 2, 4 or 8 bytes. Hence, if we want to\r\nperform bitwise operations, we have to know first on how many bits we\r\nare working.\r\n\r\nFor this, C introduces a new class of variable types :\r\n\r\n-   *int8\\_t* (signed integer of 8 bits)\r\n-   *uint8\\_t* (unsigned integer of 8 bits)\r\n-   *uint16\\_t* (unsigned integer of 16 bits)\r\n\r\nYou can mix *uint* or *int* with bit-lengths 8, 16, 32 and 64). These\r\ntypes are defined in &lt;stdint.h&gt;\r\n",
+            "description": "<p>In this exercise, we will work with operations on bits. When we speak about the position of a bit, index 0 corresponds to lowest order bit, 1 to the second-lowest order bit, ...</p>\r\n<p>In C source code, you can write a number in binary (base 2) by prefixing it via 0b., e.g. 0b11010 = 26.</p>\r\n<p>This exercise will introduce some non-standard data types which guarantee that the variable has a fixed number of bits. Indeed, on some machines, a <em>int</em> could use 2, 4 or 8 bytes. Hence, if we want to perform bitwise operations, we have to know first on how many bits we are working.</p>\r\n<p>For this, C introduces a new class of variable types :</p>\r\n<ul>\r\n<li><em>int8_t</em> (signed integer of 8 bits)</li>\r\n<li><em>uint8_t</em> (unsigned integer of 8 bits)</li>\r\n<li><em>uint16_t</em> (unsigned integer of 16 bits)</li>\r\n</ul>\r\n<p>You can mix <em>uint</em> or <em>int</em> with bit-lengths 8, 16, 32 and 64). These types are defined in &lt;stdint.h&gt;</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -750,7 +750,7 @@
         },
         {
             "title": "Bitwise operation: counting set bits",
-            "description": "In this exercise, we will work with operations on bits. When we speak\r\nabout the position of a bit, index 0 corresponds to lowest order bit, 1\r\nto the second-lowest order bit, ...\r\n\r\nIn C source code, you can write a number in binary (base 2) by prefixing\r\nit via 0b., e.g. 0b11010 = 26.\r\n\r\nThis exercise will introduce some non-standard data types which\r\nguarantee that the variable has a fixed number of bits. Indeed, on some\r\nmachines, a *int* could use 2, 4 or 8 bytes. Hence, if we want to\r\nperform bitwise operations, we have to know first on how many bits we\r\nare working.\r\n\r\nFor this, C introduces a new class of variable types :\r\n\r\n-   *int8\\_t* (signed integer of 8 bits)\r\n-   *uint8\\_t* (unsigned integer of 8 bits)\r\n-   *uint16\\_t* (unsigned integer of 16 bits)\r\n\r\nYou can mix *uint* or *int* with bit-lengths 8, 16, 32 and 64). These\r\ntypes are defined in &lt;stdint.h&gt;\r\n",
+            "description": "<p>In this exercise, we will work with operations on bits. When we speak about the position of a bit, index 0 corresponds to lowest order bit, 1 to the second-lowest order bit, ...</p>\r\n<p>In C source code, you can write a number in binary (base 2) by prefixing it via 0b., e.g. 0b11010 = 26.</p>\r\n<p>This exercise will introduce some non-standard data types which guarantee that the variable has a fixed number of bits. Indeed, on some machines, a <em>int</em> could use 2, 4 or 8 bytes. Hence, if we want to perform bitwise operations, we have to know first on how many bits we are working.</p>\r\n<p>For this, C introduces a new class of variable types :</p>\r\n<ul>\r\n<li><em>int8_t</em> (signed integer of 8 bits)</li>\r\n<li><em>uint8_t</em> (unsigned integer of 8 bits)</li>\r\n<li><em>uint16_t</em> (unsigned integer of 16 bits)</li>\r\n</ul>\r\n<p>You can mix <em>uint</em> or <em>int</em> with bit-lengths 8, 16, 32 and 64). These types are defined in &lt;stdint.h&gt;</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -804,7 +804,7 @@
         },
         {
             "title": "Opérations sur les bits",
-            "description": "On souhaite effectuer des opérations spécifiques sur certains bits d'un\r\nentier non-signé de 32 bits. Lorsque l'on parle de position, l'indice 0\r\ncorrespond au bit le plus faible, et 31 au bit le plus fort. Dans cet\r\nexercice, un <span class=\"title-ref\">unsigned char</span> représente\r\ntoujours un seul bit et ne pourra donc que prendre les valeurs\r\nnumériques 0 ou 1 (et non '0' et '1')\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">unsigned char\r\nget\\_bit(unsigned int x, unsigned int pos)</span> qui renvoie le bit à\r\nla position <span class=\"title-ref\">pos</span> de x.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">unsigned int\r\nset\\_bit(unsigned int x, unsigned int pos, unsigned char value)</span>\r\nqui met le bit à la position <span class=\"title-ref\">pos</span> de x à\r\nla valeur <span class=\"title-ref\">value</span>.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">unsigned char\r\nget\\_3\\_leftmost\\_bits(unsigned int x)</span> qui renvoie les 3 bits les\r\nplus à gauches de x. Par exemple, si on a la séquence 11011001, la\r\nfonction doit renvoyer la valeur correspondant à 00000110.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">unsigned char\r\nget\\_4\\_rightmost\\_bits(unsigned int x)</span> qui renvoie les 4 bits\r\nles plus à droite de x.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">unsigned int\r\nunset\\_last\\_bit(unsigned int x)</span> qui met à 0 le premier bit de\r\npoids fort à 1 qu'il trouve, et ne fait rien s'il n'y a pas de bit mis à\r\n1.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">unsigned int\r\ncycle\\_bits(unsigned int x, unsigned int n)</span> qui déplace tous les\r\nbits de n places vers la gauche selon la formule x\\[(i+n)%32\\] = x\\[i\\]\r\noù x\\[i\\] représente le ième bit de x.\r\n\r\nVous pouvez faire appel aux fonctions <span\r\nclass=\"title-ref\">get\\_bit</span> et <span\r\nclass=\"title-ref\">set\\_bit</span> dans les autres.\r\n",
+            "description": "<p>On souhaite effectuer des opérations spécifiques sur certains bits d'un entier non-signé de 32 bits. Lorsque l'on parle de position, l'indice 0 correspond au bit le plus faible, et 31 au bit le plus fort. Dans cet exercice, un <span class=\"title-ref\">unsigned char</span> représente toujours un seul bit et ne pourra donc que prendre les valeurs numériques 0 ou 1 (et non '0' et '1')</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">unsigned char get_bit(unsigned int x, unsigned int pos)</span> qui renvoie le bit à la position <span class=\"title-ref\">pos</span> de x.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">unsigned int set_bit(unsigned int x, unsigned int pos, unsigned char value)</span> qui met le bit à la position <span class=\"title-ref\">pos</span> de x à la valeur <span class=\"title-ref\">value</span>.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">unsigned char get_3_leftmost_bits(unsigned int x)</span> qui renvoie les 3 bits les plus à gauches de x. Par exemple, si on a la séquence 11011001, la fonction doit renvoyer la valeur correspondant à 00000110.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">unsigned char get_4_rightmost_bits(unsigned int x)</span> qui renvoie les 4 bits les plus à droite de x.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">unsigned int unset_last_bit(unsigned int x)</span> qui met à 0 le premier bit de poids fort à 1 qu'il trouve, et ne fait rien s'il n'y a pas de bit mis à 1.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">unsigned int cycle_bits(unsigned int x, unsigned int n)</span> qui déplace tous les bits de n places vers la gauche selon la formule x[(i+n)%32] = x[i] où x[i] représente le ième bit de x.</p>\r\n<p>Vous pouvez faire appel aux fonctions <span class=\"title-ref\">get_bit</span> et <span class=\"title-ref\">set_bit</span> dans les autres.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -858,7 +858,7 @@
         },
         {
             "title": "Gestion d'une librairie",
-            "description": "On souhaite gérer le catalogue d'une librairie dans lequel chaque livre\r\nest identifié par son auteur et son titre. La structure de données\r\nchoisie est la suivante : il y a une liste chaînée d'auteurs dont chaque\r\nélément pointe vers une liste chaînée d'ouvrages.\r\n\r\n``` c\r\ntypedef struct cellAuteur {\r\n    char *auteur;\r\n    struct cellLivre *Livres;\r\n    struct cellAuteur *next;\r\n} cellAuteur;\r\n\r\ntypedef struct cellLivre {\r\n    char *titre;\r\n    struct cellLivre *suiv;\r\n} cellLivre;\r\n```\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">cellAuteur\r\n\\*existe(cellAuteur \\*librairie, char \\*strAuteur)</span> qui teste si\r\nun auteur existe dans la liste librairie et dans ce cas renvoie un\r\npointeur sur sa cellule de la liste (et NULL sinon).\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">int\r\ncompteOuvrage(cellAuteur \\*librairie, char \\*strAuteur)</span> qui\r\ncompte le nombre de livres d'un auteur dans la liste librairie.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">void add(cellAuteur\r\n\\*librairie, char \\*strAuteur, char \\*strTitre)</span> qui ajoute dans\r\nle catalogue un livre de l'auteur indiqué. L'auteur existe dans le\r\ncatalogue. Un même livre ne peut pas être présent 2 fois dans la\r\ncatalogue.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">void supprimer(cellAuteur\r\n\\*\\*librairie, char \\*strAuteur)</span> qui supprime du catalogue un\r\nauteur et tous ses livres. L'auteur existe dans le catalogue.\r\n\r\nVous avez accès aux fonctions de <span\r\nclass=\"title-ref\">string.h</span>.\r\n",
+            "description": "<p>On souhaite gérer le catalogue d'une librairie dans lequel chaque livre est identifié par son auteur et son titre. La structure de données choisie est la suivante : il y a une liste chaînée d'auteurs dont chaque élément pointe vers une liste chaînée d'ouvrages.</p>\r\n<pre class=\"c\"><code>typedef struct cellAuteur {\r\n    char *auteur;\r\n    struct cellLivre *Livres;\r\n    struct cellAuteur *next;\r\n} cellAuteur;\r\n\r\ntypedef struct cellLivre {\r\n    char *titre;\r\n    struct cellLivre *suiv;\r\n} cellLivre;</code></pre>\r\n<p>Écrivez une fonction <span class=\"title-ref\">cellAuteur *existe(cellAuteur *librairie, char *strAuteur)</span> qui teste si un auteur existe dans la liste librairie et dans ce cas renvoie un pointeur sur sa cellule de la liste (et NULL sinon).</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">int compteOuvrage(cellAuteur *librairie, char *strAuteur)</span> qui compte le nombre de livres d'un auteur dans la liste librairie.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">void add(cellAuteur *librairie, char *strAuteur, char *strTitre)</span> qui ajoute dans le catalogue un livre de l'auteur indiqué. L'auteur existe dans le catalogue. Un même livre ne peut pas être présent 2 fois dans la catalogue.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">void supprimer(cellAuteur **librairie, char *strAuteur)</span> qui supprime du catalogue un auteur et tous ses livres. L'auteur existe dans le catalogue.</p>\r\n<p>Vous avez accès aux fonctions de <span class=\"title-ref\">string.h</span>.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -912,7 +912,7 @@
         },
         {
             "title": "Simple Binary Search Tree",
-            "description": "For this task, you will implement a simple binary search on an existing\r\nbinary tree. A binary tree has the following structure:\r\n\r\n<img src=\"https://inginious.info.ucl.ac.be/course/LSINF1252/BST/bst.png\" width=\"540\" height=\"340\" alt=\"image\" />\r\n\r\nThis binary tree is composed of nodes implemented using the following\r\nstructure.\r\n\r\n``` c\r\n/*\r\n* Node has a value, @value, and two children, @left and @right.\r\n* All the children of @left and itself have a smaller value than the node and all the children of @right and itself have a larger value than node\r\n*/\r\ntypedef struct node{\r\n    int value;\r\n    struct node* left; // to smaller values\r\n    struct node* right; // to larger values\r\n} node_t;\r\n```\r\n\r\nThe binary tree itself is defined as follows.\r\n\r\n``` c\r\ntypedef struct bt{\r\n    struct node* root;\r\n} bt_t;\r\n```\r\n",
+            "description": "<p>For this task, you will implement a simple binary search on an existing binary tree. A binary tree has the following structure:</p>\r\n<p><img src=\"https://inginious.info.ucl.ac.be/course/LSINF1252/BST/bst.png\" width=\"540\" height=\"340\" alt=\"image\" /></p>\r\n<p>This binary tree is composed of nodes implemented using the following structure.</p>\r\n<pre class=\"c\"><code>/*\r\n* Node has a value, @value, and two children, @left and @right.\r\n* All the children of @left and itself have a smaller value than the node and all the children of @right and itself have a larger value than node\r\n*/\r\ntypedef struct node{\r\n    int value;\r\n    struct node* left; // to smaller values\r\n    struct node* right; // to larger values\r\n} node_t;</code></pre>\r\n<p>The binary tree itself is defined as follows.</p>\r\n<pre class=\"c\"><code>typedef struct bt{\r\n    struct node* root;\r\n} bt_t;</code></pre>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -975,7 +975,7 @@
         },
         {
             "title": "BST : Insert and Delete",
-            "description": "To help you study your english course, you've got the wonderful idea of\r\ncreating a Binary Search Tree (BST). This will also help you to study\r\nfor the LSINF1252 course! The key of each node will be the english word\r\nand the value will be the french word corresponding. Those are\r\nrepresented using an array of char. So let's define our 2 structures :\r\n\r\n``` c\r\ntypedef struct bt {\r\n    struct node *root;\r\n} bt_t;\r\n\r\ntypedef struct node {\r\n    char *enWord;\r\n    char *frWord;\r\n    struct node *left;\r\n    struct node *right;\r\n} node_t;\r\n```\r\n\r\n**What is a Binary Search Tree (BST) ?**\r\n\r\nA Binary Search Tree is a tree for which every node has a special\r\nproperty : the subtree defined by node.left only contains keys(enWord)\r\nlower than the node's key. Similarly, the subtree defined by node.right\r\nonly contains keys higher than the node's key. This is helpful when\r\nsearching for a specific key in the data structure.\r\n\r\nTODO : SCHEME NEEDED + EXPLAIN WHICH NODE IS THE ROOT. + CHANGE THE CODE\r\n: word -&gt; enWord, definition -&gt; frWord.\r\n\r\n**Your mission**\r\n\r\nYour mission will be to implement the **insert** and the **delete**\r\nfunctions.\r\n\r\n-   **Insert** function :\r\n\r\nFor each node we know this : every key (*enWord*) in the node.left\r\nsubpart is lower than the key of the node. Similarly, every key\r\n(*enWord*) in the node.right subpart is lower than the key of the node.\r\nWe use the alphabetical order to check if one word is lower or higher\r\nthan another one.\r\n\r\n-   **Delete** function :\r\n\r\nDeleting a node in a tree like that might not be easy ! That's why I'll\r\nexplain you how to proceed (you'll have to use this procedure in order\r\nto get the points). If the node we want to delete has 0 or only 1 child,\r\nit's quite easy, we only have to replace this node by his child (if\r\nthere is one). When it comes to a node which has two children, it's\r\nharder. We first have to find the right subtree's leftmost child. In the\r\nexample, if we want to suppress *XXX*, the leftmost node of the right\r\nsubpart is *YYY*. Then, we can move *YYY* to *XXX* and replace *YYY* by\r\nhis child (if it has one).\r\n\r\nSCHEME NEEDED for XXX and YYY.\r\n\r\n*Hints :*\r\n\r\n-   `char *enWord` and `char *frWord` are pointers, memory must be\r\n    allocated by using\r\n    [malloc(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/malloc.3.html)\r\n    to copy the strings in the tree.\r\n-   Other useful commands:\r\n    [strcpy(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/strcpy.3.html),\r\n    [strlen(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/strlen.3.html)\r\n    and\r\n    [strcmp(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/strcmp.3.html).\r\n-   Do not forget to free **all** the allocated space deleting an\r\n    element.\r\n",
+            "description": "<p>To help you study your english course, you've got the wonderful idea of creating a Binary Search Tree (BST). This will also help you to study for the LSINF1252 course! The key of each node will be the english word and the value will be the french word corresponding. Those are represented using an array of char. So let's define our 2 structures :</p>\r\n<pre class=\"c\"><code>typedef struct bt {\r\n    struct node *root;\r\n} bt_t;\r\n\r\ntypedef struct node {\r\n    char *enWord;\r\n    char *frWord;\r\n    struct node *left;\r\n    struct node *right;\r\n} node_t;</code></pre>\r\n<p><strong>What is a Binary Search Tree (BST) ?</strong></p>\r\n<p>A Binary Search Tree is a tree for which every node has a special property : the subtree defined by node.left only contains keys(enWord) lower than the node's key. Similarly, the subtree defined by node.right only contains keys higher than the node's key. This is helpful when searching for a specific key in the data structure.</p>\r\n<p>TODO : SCHEME NEEDED + EXPLAIN WHICH NODE IS THE ROOT. + CHANGE THE CODE : word -&gt; enWord, definition -&gt; frWord.</p>\r\n<p><strong>Your mission</strong></p>\r\n<p>Your mission will be to implement the <strong>insert</strong> and the <strong>delete</strong> functions.</p>\r\n<ul>\r\n<li><strong>Insert</strong> function :</li>\r\n</ul>\r\n<p>For each node we know this : every key (<em>enWord</em>) in the node.left subpart is lower than the key of the node. Similarly, every key (<em>enWord</em>) in the node.right subpart is lower than the key of the node. We use the alphabetical order to check if one word is lower or higher than another one.</p>\r\n<ul>\r\n<li><strong>Delete</strong> function :</li>\r\n</ul>\r\n<p>Deleting a node in a tree like that might not be easy ! That's why I'll explain you how to proceed (you'll have to use this procedure in order to get the points). If the node we want to delete has 0 or only 1 child, it's quite easy, we only have to replace this node by his child (if there is one). When it comes to a node which has two children, it's harder. We first have to find the right subtree's leftmost child. In the example, if we want to suppress <em>XXX</em>, the leftmost node of the right subpart is <em>YYY</em>. Then, we can move <em>YYY</em> to <em>XXX</em> and replace <em>YYY</em> by his child (if it has one).</p>\r\n<p>SCHEME NEEDED for XXX and YYY.</p>\r\n<p><em>Hints :</em></p>\r\n<ul>\r\n<li><code>char *enWord</code> and <code>char *frWord</code> are pointers, memory must be allocated by using <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/malloc.3.html\">malloc(3)</a> to copy the strings in the tree.</li>\r\n<li>Other useful commands: <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/strcpy.3.html\">strcpy(3)</a>, <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/strlen.3.html\">strlen(3)</a> and <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/strcmp.3.html\">strcmp(3)</a>.</li>\r\n<li>Do not forget to free <strong>all</strong> the allocated space deleting an element.</li>\r\n</ul>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1025,7 +1025,7 @@
         },
         {
             "title": "Parcours d'un arbre binaire de recherche",
-            "description": "On souhaite parcourir un arbre binaire de recherche. Un arbre de\r\nrecherche binaire est une structure de données où chaque nœud possède\r\nune clé et une valeur. En outre, chaque nœud peut avoir 2 nœuds fils :\r\nun à gauche dont la clé est toujours inférieure à la sienne, et un à\r\ndroite dont la clé est toujours supérieure à la sienne. Autrement dit si\r\nvous êtes à un nœud dont la clé vaut 10 et que vous cherchez un nœud\r\ndont la clé vaut 5, vous savez que vous devez descendre à gauche pour\r\nespérer trouver un éventuel nœud dont la clé vaut 5.\r\n\r\n``` c\r\ntypedef struct BSTreeNode {\r\n    int key;\r\n    int value;\r\n\r\n    struct BSTreeNode *left;\r\n    struct BSTreeNode *right;\r\n} Node;\r\n```\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">int has\\_key(Node root, int\r\nkey)</span> qui vérifie si l'arbre binaire dont le sommet est le nœud\r\nroot possède un nœud dont la clé vaut key et renvoie 1 si oui, renvoie 0\r\nsinon.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">int compare(Node root\\_a,\r\nNode root\\_b)</span> qui vérifie si les 2 arbres binaires passés en\r\nargument sont identiques (ils ont la même structure et tous les nœuds\r\npossèdent la même paire clé/valeur). Renvoie 1 si les arbres sont\r\nidentiques, 0 sinon. Indice : pensez récursivement.\r\n",
+            "description": "<p>On souhaite parcourir un arbre binaire de recherche. Un arbre de recherche binaire est une structure de données où chaque nœud possède une clé et une valeur. En outre, chaque nœud peut avoir 2 nœuds fils : un à gauche dont la clé est toujours inférieure à la sienne, et un à droite dont la clé est toujours supérieure à la sienne. Autrement dit si vous êtes à un nœud dont la clé vaut 10 et que vous cherchez un nœud dont la clé vaut 5, vous savez que vous devez descendre à gauche pour espérer trouver un éventuel nœud dont la clé vaut 5.</p>\r\n<pre class=\"c\"><code>typedef struct BSTreeNode {\r\n    int key;\r\n    int value;\r\n\r\n    struct BSTreeNode *left;\r\n    struct BSTreeNode *right;\r\n} Node;</code></pre>\r\n<p>Écrivez une fonction <span class=\"title-ref\">int has_key(Node root, int key)</span> qui vérifie si l'arbre binaire dont le sommet est le nœud root possède un nœud dont la clé vaut key et renvoie 1 si oui, renvoie 0 sinon.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">int compare(Node root_a, Node root_b)</span> qui vérifie si les 2 arbres binaires passés en argument sont identiques (ils ont la même structure et tous les nœuds possèdent la même paire clé/valeur). Renvoie 1 si les arbres sont identiques, 0 sinon. Indice : pensez récursivement.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1079,7 +1079,7 @@
         },
         {
             "title": "Coder calloc en utilisant malloc",
-            "description": "Ecrire la fonction `calloc2`, ayant le même prototype et le même\r\nfonctionnement que\r\n[calloc(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/calloc.3.html)\r\nmais qui utilise\r\n[malloc(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/malloc.3.html)\r\npour allouer la mémoire.\r\n",
+            "description": "<p>Ecrire la fonction <code>calloc2</code>, ayant le même prototype et le même fonctionnement que <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/calloc.3.html\">calloc(3)</a> mais qui utilise <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/malloc.3.html\">malloc(3)</a> pour allouer la mémoire.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1133,7 +1133,7 @@
         },
         {
             "title": "Comparing functions",
-            "description": "Pointers to functions can be used to handle functions in a dynamic\r\nfashion, and will be of great importance later in this course. It is\r\nhence important to grasp how they work.\r\n\r\nIn this exercise, you will code a function which receives pointers to\r\ntwo functions, to determine if these functions are equivalent. Two\r\nfunctions are considered to be equivalent if they always produce the\r\nsame output for the same input.\r\n\r\nThe functions passed by pointers will be of the form\r\n`uint8_t func(uint8_t n)`.\r\n",
+            "description": "<p>Pointers to functions can be used to handle functions in a dynamic fashion, and will be of great importance later in this course. It is hence important to grasp how they work.</p>\r\n<p>In this exercise, you will code a function which receives pointers to two functions, to determine if these functions are equivalent. Two functions are considered to be equivalent if they always produce the same output for the same input.</p>\r\n<p>The functions passed by pointers will be of the form <code>uint8_t func(uint8_t n)</code>.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1192,7 +1192,7 @@
         },
         {
             "title": "Le programme test",
-            "description": "La commande\r\n[test(1)](https://sites.uclouvain.be/SystInfo/manpages/man1/test.1.html)\r\npermet d'évaluer une expression passée en paramètre. Elle retourne:\r\n\r\n-   `0` si l'expression passée en argument est vraie\r\n-   `1` si l'expression passée en argument est fausse\r\n\r\nOn vous demande d'écrire un sous-ensemble de la commande\r\n[test(1)](https://sites.uclouvain.be/SystInfo/manpages/man1/test.1.html)\r\nen C. Les expressions à implémenter sont `-eq`, `-ge`, `-gt`, `-le`,\r\n`-lt` et `-ne`.\r\n\r\nPour rappel, la commande\r\n[test(1)](https://sites.uclouvain.be/SystInfo/manpages/man1/test.1.html)\r\nest décrite dans la [page de\r\nmanuel](https://sites.uclouvain.be/SystInfo/manpages/man1/test.1.html)\r\nqui lui est consacrée.\r\n\r\nPour répondre à cette question, vous devez structurer votre programme\r\navec des appels de sous-fonction et donc de ne pas faire toute\r\nl'exécution dans la fonction `main()`.\r\n\r\nIl existe plusieurs façons pour tester votre code, une de ces façons est\r\nde regarder dans le shell le contenu de la variable `$?` après chaque\r\nexécution de votre programme. Une autre façon est de profiter de\r\nl'instruction conditionnelle `if-then-else` du shell.\r\n",
+            "description": "<p>La commande <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man1/test.1.html\">test(1)</a> permet d'évaluer une expression passée en paramètre. Elle retourne:</p>\r\n<ul>\r\n<li><code>0</code> si l'expression passée en argument est vraie</li>\r\n<li><code>1</code> si l'expression passée en argument est fausse</li>\r\n</ul>\r\n<p>On vous demande d'écrire un sous-ensemble de la commande <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man1/test.1.html\">test(1)</a> en C. Les expressions à implémenter sont <code>-eq</code>, <code>-ge</code>, <code>-gt</code>, <code>-le</code>, <code>-lt</code> et <code>-ne</code>.</p>\r\n<p>Pour rappel, la commande <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man1/test.1.html\">test(1)</a> est décrite dans la <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man1/test.1.html\">page de manuel</a> qui lui est consacrée.</p>\r\n<p>Pour répondre à cette question, vous devez structurer votre programme avec des appels de sous-fonction et donc de ne pas faire toute l'exécution dans la fonction <code>main()</code>.</p>\r\n<p>Il existe plusieurs façons pour tester votre code, une de ces façons est de regarder dans le shell le contenu de la variable <code>$?</code> après chaque exécution de votre programme. Une autre façon est de profiter de l'instruction conditionnelle <code>if-then-else</code> du shell.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1251,7 +1251,7 @@
         },
         {
             "title": "Count the '\\0'",
-            "description": "The character '\\\\0' identifies the end of a string in C. But it can also\r\nplay the role of a real character.\r\n\r\nIn this exercice, write the body of the function `counting_zero`, which\r\ncounts the number of occurence of the character '\\\\0'.\r\n\r\nYou cannot use any function from the string library.\r\n",
+            "description": "<p>The character '\\0' identifies the end of a string in C. But it can also play the role of a real character.</p>\r\n<p>In this exercice, write the body of the function <code>counting_zero</code>, which counts the number of occurence of the character '\\0'.</p>\r\n<p>You cannot use any function from the string library.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1354,7 +1354,7 @@
         },
         {
             "title": "Liste doublement chaînée",
-            "description": "Le syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants :  \r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions des\r\n    librairies)\r\n\r\n**Attention:** veuillez utiliser la version **HTML** du syllabus\r\n",
+            "description": "<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n<dl>\r\n<dt>Les pages de manuel sont accessibles depuis les URLs suivants :</dt>\r\n<dd><ul>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions des librairies)</li>\r\n</ul>\r\n</dd>\r\n</dl>\r\n<p><strong>Attention:</strong> veuillez utiliser la version <strong>HTML</strong> du syllabus</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1413,7 +1413,7 @@
         },
         {
             "title": "Manipulation de liste",
-            "description": "Le syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants :  \r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions des\r\n    librairies)\r\n\r\n**Attention:** veuillez utiliser la version **HTML** du syllabus\r\n",
+            "description": "<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n<dl>\r\n<dt>Les pages de manuel sont accessibles depuis les URLs suivants :</dt>\r\n<dd><ul>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions des librairies)</li>\r\n</ul>\r\n</dd>\r\n</dl>\r\n<p><strong>Attention:</strong> veuillez utiliser la version <strong>HTML</strong> du syllabus</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1467,7 +1467,7 @@
         },
         {
             "title": "Factorial",
-            "description": "The factorial of an integer *n!* is defined as `n! = 1*2*3*...*(n-1)*n`,\r\nwith *0! = 1*.\r\n",
+            "description": "<p>The factorial of an integer <em>n!</em> is defined as <code>n! = 1*2*3*...*(n-1)*n</code>, with <em>0! = 1</em>.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1521,7 +1521,7 @@
         },
         {
             "title": "Parcours de fichiers",
-            "description": "Parcourez un fichier sans jamais utiliser l'appel système read. Le\r\nsyllabus est accessible depuis <http://sites.uclouvain.be/SystInfo>\r\n",
+            "description": "<p>Parcourez un fichier sans jamais utiliser l'appel système read. Le syllabus est accessible depuis <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1571,7 +1571,7 @@
         },
         {
             "title": "Déterminer la valeur de retour d'un programme exécutable",
-            "description": "Dans un programme similaire à un shell, on vous demander d'écrire une\r\nfonction qui permet de lancer un exécutable et d'indiquer si :\r\n\r\n-   le programme ne s'est pas exécuté ou a retourné une valeur de retour\r\n    positive\r\n-   le programme s'est exécuté correctement et a retourné une valeur de\r\n    retour =0\r\n-   le programme a été interrompu par un signal\r\n\r\nLe syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants :  \r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions des\r\n    librairies)\r\n",
+            "description": "<p>Dans un programme similaire à un shell, on vous demander d'écrire une fonction qui permet de lancer un exécutable et d'indiquer si :</p>\r\n<ul>\r\n<li>le programme ne s'est pas exécuté ou a retourné une valeur de retour positive</li>\r\n<li>le programme s'est exécuté correctement et a retourné une valeur de retour =0</li>\r\n<li>le programme a été interrompu par un signal</li>\r\n</ul>\r\n<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n<dl>\r\n<dt>Les pages de manuel sont accessibles depuis les URLs suivants :</dt>\r\n<dd><ul>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions des librairies)</li>\r\n</ul>\r\n</dd>\r\n</dl>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1630,7 +1630,7 @@
         },
         {
             "title": "Threads : plus grand commun diviseur",
-            "description": "On cherche à calculer le plus grand commun diviseur de deux très grands\r\nnombres. Pour ce faire, on calcule tous les diviseurs de chacun des 2\r\nnombres, et on regarde quel est leur PGCD. Pour ce faire, on déclare la\r\nliste chaînée suivante, permettant d'enregistrer en mémoire les\r\ndiviseurs d'un nombre :\r\n\r\n``` c\r\nstruct Node {\r\n    unsigned int divisor;\r\n    struct Node *next;\r\n};\r\n```\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">void \\*factorize(void\r\n\\*n)</span> qui retourne un pointeur vers une liste chaînée contenant\r\ntous les diviseurs dans l'ordre décroissant du nombre de type <span\r\nclass=\"title-ref\">unsigned int</span> vers lequel n pointe.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">unsigned int gcd(unsigned\r\nint a, unsigned int b)</span> qui va lancer l'exécution de <span\r\nclass=\"title-ref\">factorize</span> pour a et b dans 2 threads différents\r\net va extraire des deux listes renvoyées le PGCD. Le nombre 1 est\r\nconsidéré comme un diviseur. Cette fonction renvoie 0 si une erreur\r\ns'est produite.\r\n",
+            "description": "<p>On cherche à calculer le plus grand commun diviseur de deux très grands nombres. Pour ce faire, on calcule tous les diviseurs de chacun des 2 nombres, et on regarde quel est leur PGCD. Pour ce faire, on déclare la liste chaînée suivante, permettant d'enregistrer en mémoire les diviseurs d'un nombre :</p>\r\n<pre class=\"c\"><code>struct Node {\r\n    unsigned int divisor;\r\n    struct Node *next;\r\n};</code></pre>\r\n<p>Écrivez une fonction <span class=\"title-ref\">void *factorize(void *n)</span> qui retourne un pointeur vers une liste chaînée contenant tous les diviseurs dans l'ordre décroissant du nombre de type <span class=\"title-ref\">unsigned int</span> vers lequel n pointe.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">unsigned int gcd(unsigned int a, unsigned int b)</span> qui va lancer l'exécution de <span class=\"title-ref\">factorize</span> pour a et b dans 2 threads différents et va extraire des deux listes renvoyées le PGCD. Le nombre 1 est considéré comme un diviseur. Cette fonction renvoie 0 si une erreur s'est produite.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1684,7 +1684,7 @@
         },
         {
             "title": "Conversions hexadécimales",
-            "description": "On souhaite convertir un entier non signé vers sa représentation\r\nhexadécimale. Par exemple l'entier 42 vaut \"2A\" en hexadécimal. De même,\r\non souhaite faire la conversion dans l'autre sens.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">unsigned int\r\nhex\\_to\\_int(char \\*hex)</span> qui prend en argument une chaîne de\r\ncaractères représentant un nombre hexadécimal (cette chaîne ne peut\r\ncomporter que les chiffres de 0 à 9 et les lettres A à F).\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">char\r\n\\*int\\_to\\_hex(unsigned int value, char \\*dest)</span> qui prend en\r\nargument un entier non-signé et enregistre sa représentation\r\nhexadécimale dans la chaîne de caractères indiquée par dest. On suppose\r\nque dest est un tableau de 9 char au minimum. La fonction devra toujours\r\nrenvoyer le pointeur dest.\r\n",
+            "description": "<p>On souhaite convertir un entier non signé vers sa représentation hexadécimale. Par exemple l'entier 42 vaut \"2A\" en hexadécimal. De même, on souhaite faire la conversion dans l'autre sens.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">unsigned int hex_to_int(char *hex)</span> qui prend en argument une chaîne de caractères représentant un nombre hexadécimal (cette chaîne ne peut comporter que les chiffres de 0 à 9 et les lettres A à F).</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">char *int_to_hex(unsigned int value, char *dest)</span> qui prend en argument un entier non-signé et enregistre sa représentation hexadécimale dans la chaîne de caractères indiquée par dest. On suppose que dest est un tableau de 9 char au minimum. La fonction devra toujours renvoyer le pointeur dest.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1738,7 +1738,7 @@
         },
         {
             "title": "Indexation d'un texte",
-            "description": "On souhaite indexer un texte afin de savoir quels mots reviennent le\r\nplus fréquemment dans un corpus. Le processus d'indexation se fait en 2\r\nphases : on compte d'abord le nombre d'occurrences de chaque mot, et on\r\nsupprime ensuite de la table d'indexation tous les mots qui n'ont pas\r\nété indexés au moins N fois. Le corpus est une chaîne de caractères\r\ncomposées uniquement de minuscules et où le seul délimiteur est un\r\nespace (pas de ponctuation). Votre programme n'est jamais censé produire\r\nd'erreurs de segmentation.\r\n\r\nOn définit la structure suivante représentant une entrée de l'index :\r\n\r\n``` c\r\ntypedef struct indexEntry {\r\n    char word[26];\r\n    int count; //nombre de fois qu'un mot est apparu dans le corpus\r\n    struct indexEntry *next;\r\n} Entry;\r\n```\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">Entry \\*build\\_index(char\r\n\\*corpus)</span> qui renvoie l'index associé au corpus passé en\r\nparamètre. Vous pouvez modifier la chaine passée en argument.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">void filter\\_index(Entry\r\n\\*\\*index\\_head, int treshold)</span> qui supprime de l'index tous les\r\nmots qui n'ont pas été recensés au moins treshold fois.\r\n\r\nVous avez accès aux fonctions de <span class=\"title-ref\">string.h</span>\r\net de <span class=\"title-ref\">stdlib.h</span>.\r\n",
+            "description": "<p>On souhaite indexer un texte afin de savoir quels mots reviennent le plus fréquemment dans un corpus. Le processus d'indexation se fait en 2 phases : on compte d'abord le nombre d'occurrences de chaque mot, et on supprime ensuite de la table d'indexation tous les mots qui n'ont pas été indexés au moins N fois. Le corpus est une chaîne de caractères composées uniquement de minuscules et où le seul délimiteur est un espace (pas de ponctuation). Votre programme n'est jamais censé produire d'erreurs de segmentation.</p>\r\n<p>On définit la structure suivante représentant une entrée de l'index :</p>\r\n<pre class=\"c\"><code>typedef struct indexEntry {\r\n    char word[26];\r\n    int count; //nombre de fois qu&#39;un mot est apparu dans le corpus\r\n    struct indexEntry *next;\r\n} Entry;</code></pre>\r\n<p>Écrivez une fonction <span class=\"title-ref\">Entry *build_index(char *corpus)</span> qui renvoie l'index associé au corpus passé en paramètre. Vous pouvez modifier la chaine passée en argument.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">void filter_index(Entry **index_head, int treshold)</span> qui supprime de l'index tous les mots qui n'ont pas été recensés au moins treshold fois.</p>\r\n<p>Vous avez accès aux fonctions de <span class=\"title-ref\">string.h</span> et de <span class=\"title-ref\">stdlib.h</span>.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1792,7 +1792,7 @@
         },
         {
             "title": "Tri par insertion",
-            "description": "On désire implémenter un algorithme de tri par insertion sur un tableau\r\nde N entiers, le tableau et sa taille étant passés en argument.\r\n\r\nL'algorithme de tri est le suivant : Pour chaque élément d'indice i (i\r\nvariant de 1 à N-1)\r\n\r\n-   cet élément devient la clé\r\n-   on la compare avec l'élément d'indice i-1\r\n-   si la clé est plus petite, on les échange et on recommence la\r\n    comparaison avec l'élément précédent (d'indice i-2) et ainsi de\r\n    suite, tant que la clé est plus petite que l'élément qui lui précède\r\n    (ou qu'on est revenu au début du tableau)\r\n-   quand la clé est à sa place (c'est-à-dire qu'elle est plus grande\r\n    que ou égale à l'élément qui lui précède), la boucle intérieure est\r\n    finie et on passe à l'élément d'indice i+1.\r\n",
+            "description": "<p>On désire implémenter un algorithme de tri par insertion sur un tableau de N entiers, le tableau et sa taille étant passés en argument.</p>\r\n<p>L'algorithme de tri est le suivant : Pour chaque élément d'indice i (i variant de 1 à N-1)</p>\r\n<ul>\r\n<li>cet élément devient la clé</li>\r\n<li>on la compare avec l'élément d'indice i-1</li>\r\n<li>si la clé est plus petite, on les échange et on recommence la comparaison avec l'élément précédent (d'indice i-2) et ainsi de suite, tant que la clé est plus petite que l'élément qui lui précède (ou qu'on est revenu au début du tableau)</li>\r\n<li>quand la clé est à sa place (c'est-à-dire qu'elle est plus grande que ou égale à l'élément qui lui précède), la boucle intérieure est finie et on passe à l'élément d'indice i+1.</li>\r\n</ul>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -1846,7 +1846,7 @@
         },
         {
             "title": "Intersection de fichiers",
-            "description": "Le syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants :  \r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions des\r\n    librairies)\r\n\r\n**Attention:** veuillez utiliser la version **HTML** du syllabus\r\n",
+            "description": "<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n<dl>\r\n<dt>Les pages de manuel sont accessibles depuis les URLs suivants :</dt>\r\n<dd><ul>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions des librairies)</li>\r\n</ul>\r\n</dd>\r\n</dl>\r\n<p><strong>Attention:</strong> veuillez utiliser la version <strong>HTML</strong> du syllabus</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2005,7 +2005,7 @@
         },
         {
             "title": "Filtering a linked list",
-            "description": "You have a linked list. Each element of the list is a `struct node`.\r\n\r\n``` c\r\nstruct node {\r\n    struct node *next;\r\n    int hash;\r\n    int id;\r\n    char name[20];\r\n    char buffer[100];\r\n    unsigned int timestamp;\r\n    char acl;\r\n    short flow;\r\n    char *parent;\r\n    void *fifo;\r\n};\r\n```\r\n",
+            "description": "<p>You have a linked list. Each element of the list is a <code>struct node</code>.</p>\r\n<pre class=\"c\"><code>struct node {\r\n    struct node *next;\r\n    int hash;\r\n    int id;\r\n    char name[20];\r\n    char buffer[100];\r\n    unsigned int timestamp;\r\n    char acl;\r\n    short flow;\r\n    char *parent;\r\n    void *fifo;\r\n};</code></pre>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2064,7 +2064,7 @@
         },
         {
             "title": "Reading arguments",
-            "description": "When you execute a C program, its function `main()` is called with, as\r\nparameters, the name of the program and the arguments after the\r\nexecutable's name.\r\n",
+            "description": "<p>When you execute a C program, its function <code>main()</code> is called with, as parameters, the name of the program and the arguments after the executable's name.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2118,7 +2118,7 @@
         },
         {
             "title": "malloc, realloc et free INCOMPLETE",
-            "description": "La type de la plupart des variables en C est facile à déterminer.\r\nNéanmoins, le C contient aussi des types qui ne diffèrent que de façons\r\nsubtiles, comme les\r\n",
+            "description": "<p>La type de la plupart des variables en C est facile à déterminer. Néanmoins, le C contient aussi des types qui ne diffèrent que de façons subtiles, comme les</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2168,7 +2168,7 @@
         },
         {
             "title": "Multiplication de matrices",
-            "description": "Écrivez une fonction\r\n`int access(int *A, int taille, int ordonnee, int abscisse)` qui renvoie\r\nl'élément d'abscisse et d'ordonnée indiquées dans une matrice carrée\r\ntaille x taille d'entiers (il s'agit donc de l'élément <span\r\nclass=\"title-ref\">A\\[ordonnee\\]\\[abscisse\\]</span>). Les indices <span\r\nclass=\"title-ref\">ordonnee</span> et <span\r\nclass=\"title-ref\">abscisse</span> vont de 1 à <span\r\nclass=\"title-ref\">taille</span>.\r\n\r\nÉcrivez une fonction qui effectue la multiplication de deux matrices\r\ncarrées taille x taille d'entiers. Le prototype de la fonction est la\r\nsuivante : <span class=\"title-ref\">void mult(int \\*A, int \\*B, int \\*C,\r\nint taille)</span> et elle calcule C = A x B. Les trois matrices sont\r\nstockées sous forme de tableau ligne par ligne et la place de la matrice\r\nC est déjà allouée.\r\n",
+            "description": "<p>Écrivez une fonction <code>int access(int *A, int taille, int ordonnee, int abscisse)</code> qui renvoie l'élément d'abscisse et d'ordonnée indiquées dans une matrice carrée taille x taille d'entiers (il s'agit donc de l'élément <span class=\"title-ref\">A[ordonnee][abscisse]</span>). Les indices <span class=\"title-ref\">ordonnee</span> et <span class=\"title-ref\">abscisse</span> vont de 1 à <span class=\"title-ref\">taille</span>.</p>\r\n<p>Écrivez une fonction qui effectue la multiplication de deux matrices carrées taille x taille d'entiers. Le prototype de la fonction est la suivante : <span class=\"title-ref\">void mult(int *A, int *B, int *C, int taille)</span> et elle calcule C = A x B. Les trois matrices sont stockées sous forme de tableau ligne par ligne et la place de la matrice C est déjà allouée.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2222,7 +2222,7 @@
         },
         {
             "title": "strlen, strcat et strcasecmp",
-            "description": "La libraire\r\n[string(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/string.3.html)\r\nimplémente un grand nombre de fonctions de manipulation des strings qui\r\nvous seront utiles lors de différents projets de programmation.\r\n",
+            "description": "<p>La libraire <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/string.3.html\">string(3)</a> implémente un grand nombre de fonctions de manipulation des strings qui vous seront utiles lors de différents projets de programmation.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2280,7 +2280,7 @@
         },
         {
             "title": "Reading from the wire",
-            "description": "Back in 1977, you want to read your e-mail with your freshly bought\r\nApple II. You are connected to the ARPANET through a modem, but\r\nunfortunately the modem's manufacturer has only given a single function\r\n`modem_read`, to read the data received by the modem, with the following\r\nprototype :\r\n\r\n`void modem_read(void *buffer, int *buf_len);`\r\n\r\nThis function fills the supplied buffer with the data received from the\r\nmodem (an array of `char`), and writes the number of bytes written to\r\nthe value pointed by `buf_len`. It can write up to maximum 256 bytes in\r\na single call. This function is guaranteed to return.\r\n",
+            "description": "<p>Back in 1977, you want to read your e-mail with your freshly bought Apple II. You are connected to the ARPANET through a modem, but unfortunately the modem's manufacturer has only given a single function <code>modem_read</code>, to read the data received by the modem, with the following prototype :</p>\r\n<p><code>void modem_read(void *buffer, int *buf_len);</code></p>\r\n<p>This function fills the supplied buffer with the data received from the modem (an array of <code>char</code>), and writes the number of bytes written to the value pointed by <code>buf_len</code>. It can write up to maximum 256 bytes in a single call. This function is guaranteed to return.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2343,7 +2343,7 @@
         },
         {
             "title": "Manipulate the memory",
-            "description": "Given the following structure *university\\_t*:\r\n\r\n``` c\r\ntypedef struct university {\r\n    char* city;\r\n    int creation;\r\n    person_t* rector;\r\n} university_t;\r\n```\r\n\r\nAnd the structure *person\\_t*:\r\n\r\n``` c\r\ntypedef struct person {\r\n    char* name;\r\n    int salary;\r\n    int age;\r\n} person_t;\r\n```\r\n\r\nYou are asked to implement the functions `init_all` and `free_all`,\r\nwhich respectively initialises the structure *universiy\\_t* and frees\r\nall the memory associated with it.\r\n\r\nThe *name* and the *city* have been allocated with *malloc*.\r\n\r\n*Hint:* all the data may not have been initialised correctly. Therefore,\r\nyou have to handle all the cases (e.g. some pointers can be already\r\nNULL, and don't need to be freed).\r\n",
+            "description": "<p>Given the following structure <em>university_t</em>:</p>\r\n<pre class=\"c\"><code>typedef struct university {\r\n    char* city;\r\n    int creation;\r\n    person_t* rector;\r\n} university_t;</code></pre>\r\n<p>And the structure <em>person_t</em>:</p>\r\n<pre class=\"c\"><code>typedef struct person {\r\n    char* name;\r\n    int salary;\r\n    int age;\r\n} person_t;</code></pre>\r\n<p>You are asked to implement the functions <code>init_all</code> and <code>free_all</code>, which respectively initialises the structure <em>universiy_t</em> and frees all the memory associated with it.</p>\r\n<p>The <em>name</em> and the <em>city</em> have been allocated with <em>malloc</em>.</p>\r\n<p><em>Hint:</em> all the data may not have been initialised correctly. Therefore, you have to handle all the cases (e.g. some pointers can be already NULL, and don't need to be freed).</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2402,7 +2402,7 @@
         },
         {
             "title": "Mes propres sémaphores",
-            "description": "On souhaite écrire notre propre type de sémaphore à l'aide de mutex. On\r\ndéclare pour ce faire les 2 structures suivantes :\r\n\r\n``` c\r\ntypedef struct semProcess {\r\n    pthread_mutex_t mutex;\r\n    struct semProcess *next;\r\n} sem_process_t;\r\n\r\ntypedef struct mySem {\r\n    int value;\r\n    int capacity;\r\n    sem_process_t *blocked_procs;\r\n    pthread_mutex_t mutex;\r\n} mysem_t;\r\n```\r\n\r\nChaque sémaphore contient une valeur et une liste de processus bloqués.\r\nLe mutex de mySem devra être utilisé pour éviter que des appels\r\nconcurrents des fonctions sousmentionnées sur la même sémaphore ne\r\nsoient pas exécutés simultanément.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">int mysem\\_wait(mysem\\_t\r\n\\*sem)</span> qui bloque le fil d'exécution si <span\r\nclass=\"title-ref\">value</span> de <span class=\"title-ref\">sem</span>\r\nvaut 0 et ajoute le processus à la fin de la liste des processus\r\nbloqués. Pour bloquer un processus, vous devrez ajouter un <span\r\nclass=\"title-ref\">sem\\_process\\_t</span> à <span\r\nclass=\"title-ref\">blocked\\_procs</span> du sémaphore et verrouiller le\r\nmutex de <span class=\"title-ref\">sem\\_process\\_t</span>. Si <span\r\nclass=\"title-ref\">value</span> est plus grand que 0, il est décrémenté.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">int mysem\\_post(mysem\\_t\r\n\\*sem)</span> qui incrémente <span class=\"title-ref\">value</span> de\r\n<span class=\"title-ref\">sem</span> si aucun autre processus n'est\r\nbloqué, et sinon débloque le premier processus de la liste des processus\r\nbloqués. <span class=\"title-ref\">value</span> ne peut jamais excéder\r\n<span class=\"title-ref\">capacity</span>. **ATTENTION** : Ne libérez pas\r\nla structure sem\\_process\\_t d'un processus libéré, contentez-vous de\r\nsupprimer son mutex. Considérez que la fonction <span\r\nclass=\"title-ref\">mysem\\_close</span> que vous n'avez pas à implémenter\r\ns'occupe de la libération des ressources.\r\n",
+            "description": "<p>On souhaite écrire notre propre type de sémaphore à l'aide de mutex. On déclare pour ce faire les 2 structures suivantes :</p>\r\n<pre class=\"c\"><code>typedef struct semProcess {\r\n    pthread_mutex_t mutex;\r\n    struct semProcess *next;\r\n} sem_process_t;\r\n\r\ntypedef struct mySem {\r\n    int value;\r\n    int capacity;\r\n    sem_process_t *blocked_procs;\r\n    pthread_mutex_t mutex;\r\n} mysem_t;</code></pre>\r\n<p>Chaque sémaphore contient une valeur et une liste de processus bloqués. Le mutex de mySem devra être utilisé pour éviter que des appels concurrents des fonctions sousmentionnées sur la même sémaphore ne soient pas exécutés simultanément.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">int mysem_wait(mysem_t *sem)</span> qui bloque le fil d'exécution si <span class=\"title-ref\">value</span> de <span class=\"title-ref\">sem</span> vaut 0 et ajoute le processus à la fin de la liste des processus bloqués. Pour bloquer un processus, vous devrez ajouter un <span class=\"title-ref\">sem_process_t</span> à <span class=\"title-ref\">blocked_procs</span> du sémaphore et verrouiller le mutex de <span class=\"title-ref\">sem_process_t</span>. Si <span class=\"title-ref\">value</span> est plus grand que 0, il est décrémenté.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">int mysem_post(mysem_t *sem)</span> qui incrémente <span class=\"title-ref\">value</span> de <span class=\"title-ref\">sem</span> si aucun autre processus n'est bloqué, et sinon débloque le premier processus de la liste des processus bloqués. <span class=\"title-ref\">value</span> ne peut jamais excéder <span class=\"title-ref\">capacity</span>. <strong>ATTENTION</strong> : Ne libérez pas la structure sem_process_t d'un processus libéré, contentez-vous de supprimer son mutex. Considérez que la fonction <span class=\"title-ref\">mysem_close</span> que vous n'avez pas à implémenter s'occupe de la libération des ressources.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2456,7 +2456,7 @@
         },
         {
             "title": "My strlen - REVIEWED",
-            "description": "Your objective is to implement\r\n[strlen](https://sites.uclouvain.be/SystInfo/manpages/man3/strlen.3.html)\r\none of the basic functions of the C library that deals with strings.\r\n",
+            "description": "<p>Your objective is to implement <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/strlen.3.html\">strlen</a> one of the basic functions of the C library that deals with strings.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2510,7 +2510,7 @@
         },
         {
             "title": "Ordered  linked list",
-            "description": "Given the provided implementation of a linked list, you need to\r\nimplement the `insert` function based on a specific order relation. The\r\ngoal is to implement an ordered list similar to a <span\r\nclass=\"title-ref\">LinkedList</span> with a <span\r\nclass=\"title-ref\">Comparator</span> in Java.\r\n",
+            "description": "<p>Given the provided implementation of a linked list, you need to implement the <code>insert</code> function based on a specific order relation. The goal is to implement an ordered list similar to a <span class=\"title-ref\">LinkedList</span> with a <span class=\"title-ref\">Comparator</span> in Java.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2569,7 +2569,7 @@
         },
         {
             "title": "Soumission du projet de seconde session",
-            "description": "Cette tâche permet de vérifier la validité de l'archive à soumettre pour\r\nle projet de seconde session sur les matrices creuses. Une archive ne\r\npassant pas le test ne sera pas corrigée.\r\n",
+            "description": "<p>Cette tâche permet de vérifier la validité de l'archive à soumettre pour le projet de seconde session sur les matrices creuses. Une archive ne passant pas le test ne sera pas corrigée.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2609,7 +2609,7 @@
         },
         {
             "title": "Palindrome",
-            "description": "Palindrome are strings of text which read the same backward as forward,\r\ni.e. : \"racecar\", \"a man a plan a canal panama\" or \"kayak\".\r\n",
+            "description": "<p>Palindrome are strings of text which read the same backward as forward, i.e. : \"racecar\", \"a man a plan a canal panama\" or \"kayak\".</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2663,7 +2663,7 @@
         },
         {
             "title": "Producteurs/Consommateurs",
-            "description": "Le syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants :  \r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions des\r\n    librairies)\r\n\r\n**Attention:** veuillez utiliser la version **HTML** du syllabus\r\n\r\n![image](https://inginious.info.ucl.ac.be/course/LSINF1252/PC/buffer.png)\r\n",
+            "description": "<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n<dl>\r\n<dt>Les pages de manuel sont accessibles depuis les URLs suivants :</dt>\r\n<dd><ul>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions des librairies)</li>\r\n</ul>\r\n</dd>\r\n</dl>\r\n<p><strong>Attention:</strong> veuillez utiliser la version <strong>HTML</strong> du syllabus</p>\r\n<p><img src=\"https://inginious.info.ucl.ac.be/course/LSINF1252/PC/buffer.png\" alt=\"image\" /></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2722,7 +2722,7 @@
         },
         {
             "title": "Pointer arithmetic",
-            "description": "A hacker wanted to challenge you and encrypted your hard drive. To\r\nunlock your drive, he gave you a function\r\n`get_key(int a, char b, int c)` which returns the decryption key if the\r\ncorrect parameters are given.\r\n\r\nHe then hid the parameters *a*, *b* and *c* in memory, and gave you a\r\npointer from which you can retrieve these parameters.\r\n",
+            "description": "<p>A hacker wanted to challenge you and encrypted your hard drive. To unlock your drive, he gave you a function <code>get_key(int a, char b, int c)</code> which returns the decryption key if the correct parameters are given.</p>\r\n<p>He then hid the parameters <em>a</em>, <em>b</em> and <em>c</em> in memory, and gave you a pointer from which you can retrieve these parameters.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2776,7 +2776,7 @@
         },
         {
             "title": "Polynômes",
-            "description": "On souhaite gérer des polynômes réels de degré inférieur ou égal à 10 en\r\nutilisant la structure suivante :\r\n\r\n<span class=\"title-ref\">typedef struct { double coeff\\[10\\]; }\r\npoly;</span>\r\n\r\nqui servira à représenter le polynôme où coeff\\[0\\] est le coefficient\r\ndu terme indépendant, coeff\\[1\\] le coefficient du terme en x, etc.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">double eval(poly \\*P,\r\ndouble x)</span> qui calcule la valeur du polynôme P au point x. On\r\npourra se servir de la formule de Horner : P(x) = ((...(a\\_9\\*x +\r\na\\_8)*x + a\\_7)*x + ...)x + a\\_1)\\*x + a\\_0 où a\\_i est coeff\\[i\\].\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">void derivee(poly \\*P, poly\r\n\\*Pderiv)</span> qui inscrit dans <span class=\"title-ref\">Pderiv</span>\r\nla dérivée du polynôme P.\r\n\r\nÉcrivez une fonction double <span class=\"title-ref\">racine(poly \\*P,\r\ndouble x0)</span> qui calcule via la méthode de Newton la racine du\r\npolynôme P. La méthode est la suivante : on part d'un point initial, et\r\non construit une suite de points qui se rapprochent de la racine en\r\ncalculant à chaque étape un nouveau point à partir de la valeur du\r\npolynôme et de sa dérivée : x\\_n+1 = x\\_n - P(x\\_n)/P'(x\\_n). La\r\nfonction s'arrête lorsque abs(P(x\\_n)) &lt; 0.0001. On suppose que le\r\ncalcul converge toujours vers une racine.\r\n",
+            "description": "<p>On souhaite gérer des polynômes réels de degré inférieur ou égal à 10 en utilisant la structure suivante :</p>\r\n<p><span class=\"title-ref\">typedef struct { double coeff[10]; } poly;</span></p>\r\n<p>qui servira à représenter le polynôme où coeff[0] est le coefficient du terme indépendant, coeff[1] le coefficient du terme en x, etc.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">double eval(poly *P, double x)</span> qui calcule la valeur du polynôme P au point x. On pourra se servir de la formule de Horner : P(x) = ((...(a_9*x + a_8)<em>x + a_7)</em>x + ...)x + a_1)*x + a_0 où a_i est coeff[i].</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">void derivee(poly *P, poly *Pderiv)</span> qui inscrit dans <span class=\"title-ref\">Pderiv</span> la dérivée du polynôme P.</p>\r\n<p>Écrivez une fonction double <span class=\"title-ref\">racine(poly *P, double x0)</span> qui calcule via la méthode de Newton la racine du polynôme P. La méthode est la suivante : on part d'un point initial, et on construit une suite de points qui se rapprochent de la racine en calculant à chaque étape un nouveau point à partir de la valeur du polynôme et de sa dérivée : x_n+1 = x_n - P(x_n)/P'(x_n). La fonction s'arrête lorsque abs(P(x_n)) &lt; 0.0001. On suppose que le calcul converge toujours vers une racine.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2830,7 +2830,7 @@
         },
         {
             "title": "Printing data",
-            "description": "In this exercise, you will familiarize yourself with the functions\r\n[printf(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/printf.3.html)\r\n(printing on the standard output) and\r\n[sprintf(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/sprintf.3.html)\r\n(text formatting).\r\n",
+            "description": "<p>In this exercise, you will familiarize yourself with the functions <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/printf.3.html\">printf(3)</a> (printing on the standard output) and <a href=\"%60printf%20%3Chttps://sites.uclouvain.be/SystInfo/manpages/man3/sprintf.3.html\">sprintf(3)</a> (text formatting).</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2889,7 +2889,7 @@
         },
         {
             "title": "Modification de fichier",
-            "description": "La fonction `reverse`, dont les spécifications sont reprises ci-dessous,\r\npermet de manipuler les données dans un fichier.\r\n\r\nLe syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo> Les pages de manuel sont\r\naccessibles depuis les URLs suivants :\r\n\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions\r\n    librairies)\r\n",
+            "description": "<p>La fonction <code>reverse</code>, dont les spécifications sont reprises ci-dessous, permet de manipuler les données dans un fichier.</p>\r\n<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a> Les pages de manuel sont accessibles depuis les URLs suivants :</p>\r\n<ul>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions librairies)</li>\r\n</ul>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -2948,7 +2948,7 @@
         },
         {
             "title": "Calculatrice en notation polonaise inversée",
-            "description": "La notation polonaise inversée permet d'écrire de façon non-ambigüe sans\r\nparenthèses des formules arithmétiques. Par exemple, le calcul ((1 + 2)\r\n× 4) + 3 peut être noté 1 2 + 4 \\* 3 + en notation polonaise inverse, ou\r\nencore 3 4 1 2 + \\* +. L'avantage de cette notation est qu'elle est très\r\nfacilement compréhensible par un ordinateur : on imagine une pile où on\r\npeut soit ajouter un élément sur la pile, soit retirer le dernier\r\nélément ajouté. En parcourant la formule arithmétique, si on rencontre\r\nun nombre, on l'ajoute à la pile, si on rencontre une opérande (par ex.\r\nle symbole '+'), on retire les 2 derniers éléments de la pile, on en\r\nfait la somme et on ajoute le résultat à la pile.\r\n\r\nPour ce problème, vous ne pourrez utiliser que la variable globale <span\r\nclass=\"title-ref\">double stack\\[STACK\\_SIZE\\]</span>, représentant la\r\npile, et <span class=\"title-ref\">int stack\\_height</span>, représentant\r\nla hauteur actuelle de la pile, qui seront déjà initialisées à 0 et\r\naccessibles par vos fonctions. Vous pouvez supposer que les exemples\r\nutilisés par les tests feront en sorte que le nombre d'éléments actuels\r\ndans la pile ne dépassera jamais <span\r\nclass=\"title-ref\">STACK\\_SIZE</span>.\r\n\r\nÉcrivez une fonction void push(double value)\\` qui permet d'ajouter\r\nl'élément value à la pile.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">double pop(void)</span> qui\r\nenlève et retourne l'élément au sommet de la pile.\r\n\r\nÉcrivez une fonction <span class=\"title-ref\">double rpn(char\r\n\\*expr)</span> qui calcule l'expression en notation polonaise inverse\r\ncontenue dans expr et retourne le résultat. Vous pouvez supposer que\r\n<span class=\"title-ref\">expr</span> contiendra toujours une expression\r\ncorrecte où il ne restera jamais qu'un seul élément sur la pile à la fin\r\nde l'exécution. Indice : utilisez la fonction strtok(3) pour séparer les\r\ndifférents éléments de la chaîne et la fonction atof(3) pour convertir\r\nl'éventuel nombre rencontré en double. Exemple : \"4 2 5 \\* + 1 3 2 \\* +\r\n/\" est censé renvoyer 2. Les opérandes possibles sont + (addition), -\r\n(soustraction), \\* (multiplication) et / (division).\r\n",
+            "description": "<p>La notation polonaise inversée permet d'écrire de façon non-ambigüe sans parenthèses des formules arithmétiques. Par exemple, le calcul ((1 + 2) × 4) + 3 peut être noté 1 2 + 4 * 3 + en notation polonaise inverse, ou encore 3 4 1 2 + * +. L'avantage de cette notation est qu'elle est très facilement compréhensible par un ordinateur : on imagine une pile où on peut soit ajouter un élément sur la pile, soit retirer le dernier élément ajouté. En parcourant la formule arithmétique, si on rencontre un nombre, on l'ajoute à la pile, si on rencontre une opérande (par ex. le symbole '+'), on retire les 2 derniers éléments de la pile, on en fait la somme et on ajoute le résultat à la pile.</p>\r\n<p>Pour ce problème, vous ne pourrez utiliser que la variable globale <span class=\"title-ref\">double stack[STACK_SIZE]</span>, représentant la pile, et <span class=\"title-ref\">int stack_height</span>, représentant la hauteur actuelle de la pile, qui seront déjà initialisées à 0 et accessibles par vos fonctions. Vous pouvez supposer que les exemples utilisés par les tests feront en sorte que le nombre d'éléments actuels dans la pile ne dépassera jamais <span class=\"title-ref\">STACK_SIZE</span>.</p>\r\n<p>Écrivez une fonction void push(double value)` qui permet d'ajouter l'élément value à la pile.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">double pop(void)</span> qui enlève et retourne l'élément au sommet de la pile.</p>\r\n<p>Écrivez une fonction <span class=\"title-ref\">double rpn(char *expr)</span> qui calcule l'expression en notation polonaise inverse contenue dans expr et retourne le résultat. Vous pouvez supposer que <span class=\"title-ref\">expr</span> contiendra toujours une expression correcte où il ne restera jamais qu'un seul élément sur la pile à la fin de l'exécution. Indice : utilisez la fonction strtok(3) pour séparer les différents éléments de la chaîne et la fonction atof(3) pour convertir l'éventuel nombre rencontré en double. Exemple : \"4 2 5 * + 1 3 2 * + /\" est censé renvoyer 2. Les opérandes possibles sont + (addition), - (soustraction), * (multiplication) et / (division).</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3002,7 +3002,7 @@
         },
         {
             "title": "Redirection des flux de sortie et d'erreur standards",
-            "description": "Dans un shell, il est parfois nécessaire d'exécuter des programmes en\r\nredirigeant leurs flux standards de sortie et d'erreur vers un fichier.\r\n\r\nLe syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants : -\r\n<http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes) -\r\n<http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes) -\r\n<http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions des\r\nlibrairies)\r\n",
+            "description": "<p>Dans un shell, il est parfois nécessaire d'exécuter des programmes en redirigeant leurs flux standards de sortie et d'erreur vers un fichier.</p>\r\n<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n<p>Les pages de manuel sont accessibles depuis les URLs suivants : - <a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes) - <a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes) - <a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions des librairies)</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3056,7 +3056,7 @@
         },
         {
             "title": "Capture The Flag 1",
-            "description": "Téléchargez [cette\r\narchive](https://inginious.info.ucl.ac.be/course/LSINF1252/s1_ctf1/archive.tar.gz),\r\nouvrez `FirstMission` et suivez les instructions. Un code individuel\r\nvous sera fourni à la fin de l'exercice. Entrez-le ci-dessous pour\r\nconfirmer que vous avez complètement réalisé cet exercice.\r\n",
+            "description": "<p>Téléchargez <a href=\"https://inginious.info.ucl.ac.be/course/LSINF1252/s1_ctf1/archive.tar.gz\">cette archive</a>, ouvrez <code>FirstMission</code> et suivez les instructions. Un code individuel vous sera fourni à la fin de l'exercice. Entrez-le ci-dessous pour confirmer que vous avez complètement réalisé cet exercice.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3109,7 +3109,7 @@
         },
         {
             "title": "Capture The Flag 2",
-            "description": "Téléchargez [cette\r\narchive](https://inginious.info.ucl.ac.be/course/LSINF1252/s1_ctf2/CTF2.tar.gz).\r\nPlacez son contenu dans un dossier de votre choix, lisez le fichier\r\n`FirstMission` et suivez les consignes.\r\n",
+            "description": "<p>Téléchargez <a href=\"https://inginious.info.ucl.ac.be/course/LSINF1252/s1_ctf2/CTF2.tar.gz\">cette archive</a>. Placez son contenu dans un dossier de votre choix, lisez le fichier <code>FirstMission</code> et suivez les consignes.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3158,7 +3158,7 @@
         },
         {
             "title": "Diff",
-            "description": "3 students are suspected of doing illegal things with computers of the\r\nuniversity. They know that the computers send logs to the server and so\r\nhid their activity from the server. But they don't know that logs are\r\nalso saved on the different computers. There are the logs from the\r\nserver and from the students, use\r\n[diff(1)](https://sites.uclouvain.be/SystInfo/manpages/man1/diff.1.html)\r\nto compare them and find which students are innocent.\r\n\r\n-   [syslog](https://inginious.info.ucl.ac.be/course/LSINF1252/s1_diff/syslog.log)\r\n-   [student\r\n    1](https://inginious.info.ucl.ac.be/course/LSINF1252/s1_diff/student1.log)\r\n-   [student\r\n    2](https://inginious.info.ucl.ac.be/course/LSINF1252/s1_diff/student2.log)\r\n-   [student\r\n    3](https://inginious.info.ucl.ac.be/course/LSINF1252/s1_diff/student3.log)\r\n",
+            "description": "<p>3 students are suspected of doing illegal things with computers of the university. They know that the computers send logs to the server and so hid their activity from the server. But they don't know that logs are also saved on the different computers. There are the logs from the server and from the students, use <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man1/diff.1.html\">diff(1)</a> to compare them and find which students are innocent.</p>\r\n<ul>\r\n<li><a href=\"https://inginious.info.ucl.ac.be/course/LSINF1252/s1_diff/syslog.log\">syslog</a></li>\r\n<li><a href=\"https://inginious.info.ucl.ac.be/course/LSINF1252/s1_diff/student1.log\">student 1</a></li>\r\n<li><a href=\"https://inginious.info.ucl.ac.be/course/LSINF1252/s1_diff/student2.log\">student 2</a></li>\r\n<li><a href=\"https://inginious.info.ucl.ac.be/course/LSINF1252/s1_diff/student3.log\">student 3</a></li>\r\n</ul>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3211,7 +3211,7 @@
         },
         {
             "title": "grep",
-            "description": "The [grep(1)\r\ncommand](https://sites.uclouvain.be/SystInfo/manpages/man1/grep.1.html)\r\ncan be used to detect or extract lots of information from text files.\r\nWhen working with source code,\r\n[grep(1)](https://sites.uclouvain.be/SystInfo/manpages/man1/grep.1.html)\r\ncan help you to find in which files some functions or constants have\r\nbeen defined. For this exercise, we will use the source code of the\r\n[CUnit](http://cunit.sourceforge.net) testing framework that you can\r\ndownload as a [tar\r\narchive](https://inginious.info.ucl.ac.be/course/LSINF1252/s1_grep/CUnit.tar).\r\n",
+            "description": "<p>The <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man1/grep.1.html\">grep(1) command</a> can be used to detect or extract lots of information from text files. When working with source code, <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man1/grep.1.html\">grep(1)</a> can help you to find in which files some functions or constants have been defined. For this exercise, we will use the source code of the <a href=\"http://cunit.sourceforge.net\">CUnit</a> testing framework that you can download as a <a href=\"https://inginious.info.ucl.ac.be/course/LSINF1252/s1_grep/CUnit.tar\">tar archive</a>.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3260,7 +3260,7 @@
         },
         {
             "title": "Pipes",
-            "description": "In this exercise you will learn to use pipes, refer to [this\r\nsection](https://sites.uclouvain.be/SystInfo/notes/Theorie/html/intro.html#shell)\r\nfor their use.\r\n\r\nDownload the following\r\n[input](https://inginious.info.ucl.ac.be/course/LSINF1252/s1_pipes/input.txt)\r\nfrom where you want to extract an alphabetically **sorted** list of\r\n**unique** hashtags. This can easily be done with pipes. To only select\r\nhashtags from the input, you can either use `sed '/ [^{#}]/d'` or\r\n[grep(1)](https://sites.uclouvain.be/SystInfo/manpages/man1/grep.1.html).\r\n",
+            "description": "<p>In this exercise you will learn to use pipes, refer to <a href=\"https://sites.uclouvain.be/SystInfo/notes/Theorie/html/intro.html#shell\">this section</a> for their use.</p>\r\n<p>Download the following <a href=\"https://inginious.info.ucl.ac.be/course/LSINF1252/s1_pipes/input.txt\">input</a> from where you want to extract an alphabetically <strong>sorted</strong> list of <strong>unique</strong> hashtags. This can easily be done with pipes. To only select hashtags from the input, you can either use <code>sed '/ [^{#}]/d'</code> or <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man1/grep.1.html\">grep(1)</a>.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3313,7 +3313,7 @@
         },
         {
             "title": "tar",
-            "description": "Unix users often need to backup files and directories or send them over\r\nthe Internet.\r\n[tar(1)](https://sites.uclouvain.be/SystInfo/manpages/man1/tar.1.html)\r\nis a very useful tool which can be used to create compressed archives of\r\ndirectories and all the files that they contain. At the end of a\r\nproject, you will have created the following files (you can download\r\nthem from\r\n[here](https://inginious.info.ucl.ac.be/course/LSINF1252/s1_tar/Enonce.zip))\r\n\r\n``` console\r\n/\r\n    file\r\n    folder1/\r\n        file1.c\r\n        file2.c\r\n        file3.c\r\n    folder2/\r\n        file1.h\r\n        fime2.h\r\n        file3.h\r\n```\r\n\r\nUsing\r\n[tar(1)](https://sites.uclouvain.be/SystInfo/manpages/man1/tar.1.html),\r\ncreate a `.tar.gz` compressed archive which contains all these files and\r\ndirectories and submit it below.\r\n",
+            "description": "<p>Unix users often need to backup files and directories or send them over the Internet. <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man1/tar.1.html\">tar(1)</a> is a very useful tool which can be used to create compressed archives of directories and all the files that they contain. At the end of a project, you will have created the following files (you can download them from <a href=\"https://inginious.info.ucl.ac.be/course/LSINF1252/s1_tar/Enonce.zip\">here</a>)</p>\r\n<pre class=\"console\"><code>/\r\n    file\r\n    folder1/\r\n        file1.c\r\n        file2.c\r\n        file3.c\r\n    folder2/\r\n        file1.h\r\n        fime2.h\r\n        file3.h</code></pre>\r\n<p>Using <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man1/tar.1.html\">tar(1)</a>, create a <code>.tar.gz</code> compressed archive which contains all these files and directories and submit it below.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3366,7 +3366,7 @@
         },
         {
             "title": "make basics",
-            "description": "*Estimated time: 20 minutes*\r\n\r\n`make` is a task runner for targets described in a <span\r\nclass=\"title-ref\">Makefile</span>. It is mostly used to control the\r\ncompilation of an executable from source code. Thus, you can use it to\r\nautomate the tidious task of compiling your c code, or even automate the\r\ncompilation of a report made with LaTeX.\r\n\r\n`make` a new beginning\r\n======================\r\n\r\nTo give you a first taste, open up a *terminal* and type the following\r\ncommand: `make`.\r\n\r\n`make` will greet you with the following message:\r\n\r\n``` \r\nmake: *** No targets specified and no makefile found.  Stop.\r\n```\r\n\r\nSo what happened? `make` first start to search in your *current\r\ndirectory* for a file called `Makefile`. This file contains\r\n*instructions*, aka *rules*, that tell `make` what to do. Since there is\r\nno such file, `make` stops almost instantly.\r\n\r\n`make` it simple\r\n================\r\n\r\nNow write a simple hello world program, which you will save into a file\r\ncalled `hello.c`. This program will print the following on the standard\r\noutput:\r\n\r\n``` \r\nHello make\r\n```\r\n\r\nNow, fire up your terminal, use `cd path/to/hello/folder/` to go to the\r\ndirectory which contains `hello.c` ([download\r\nhello.c](https://inginious.info.ucl.ac.be/course/LSINF1252/s2_make/hello.c)\r\nto compare with what you did) and type: `make hello`\r\n\r\nNow the `make` comes alive and tells you something like:\r\n\r\n``` \r\ngcc     hello.c   -o hello\r\n```\r\n\r\nWow! What happened? When you typed `make hello`, `hello` is what is\r\ncalled a **target**. A **target** is usually the name of a file that is\r\ngenerated by a program; examples of targets are executable or object\r\nfiles.\r\n\r\nBasically, `make` will search for a file named `hello` and detect from\r\nthat file what programming language it uses. For most languages, `make`\r\nhas some basic builtin recipes, called **implicit rules**, to compile\r\nit. Here the **recipe** is given in the above output.\r\n\r\nIn that output:\r\n\r\n-   `gcc` stands for *GNU C Compiler*;\r\n-   `hello.c` the C program to be compiled;\r\n-   `-o hello` an option to place the output of the compilation in the\r\n    file `hello`.\r\n\r\nNow if you type `ls` in your command line, you will see that a file\r\n`hello` appeared. This is the **executable** built by `make` from\r\n`hello.c`. Now you can execute it and verify what is printed on the\r\nstandard output.\r\n\r\nIf you type again `make hello` in your command line, it will tell you:\r\n\r\n``` \r\nmake: 'hello' is up to date.\r\n```\r\n\r\nThat is because `make` only builds the files that are changed. If\r\n`hello` is more recent than its source file `hello.c`, `make` will skip\r\nthe compilation process.\r\n\r\nTo see this, modify `hello.c` to write the following on the standard\r\noutput:\r\n\r\n``` \r\nHello, make!\r\n```\r\n\r\nFinally, run `make hello` again. Since `hello.c` is more recent than\r\n`hello`, `make` will compile the source file again.\r\n\r\nThats it, you made your first experiences with `make`.\r\n\r\nNow I strongly recommend you read [sections 2.1 to 2.3. in the GNU make\r\nmanual](https://www.gnu.org/software/make/manual/make.html#Introduction).\r\nIt will only take you 10 minutes (included in the above given estimated\r\ntime) and will help you understand how to `make` magic happen.\r\n\r\nOnce you read these 3 sections, let us practice a bit.\r\n\r\nTo try the following questions locally, you can download a zip file of\r\nthe questions folder\r\n[here](https://inginious.info.ucl.ac.be/course/LSINF1252/s2_make/make_me.zip).\r\n\r\n------------------------------------------------------------------------\r\n\r\nReferences\r\n==========\r\n\r\n-   <https://sites.uclouvain.be/SystInfo/notes/Outils/html/make.html>\r\n-   <https://www.gnu.org/software/make/manual/>\r\n",
+            "description": "<p><em>Estimated time: 20 minutes</em></p>\r\n<p><code>make</code> is a task runner for targets described in a <span class=\"title-ref\">Makefile</span>. It is mostly used to control the compilation of an executable from source code. Thus, you can use it to automate the tidious task of compiling your c code, or even automate the compilation of a report made with LaTeX.</p>\r\n<h1 id=\"make-a-new-beginning\"><code>make</code> a new beginning</h1>\r\n<p>To give you a first taste, open up a <em>terminal</em> and type the following command: <code>make</code>.</p>\r\n<p><code>make</code> will greet you with the following message:</p>\r\n<pre class=\"\"><code>make: *** No targets specified and no makefile found.  Stop.</code></pre>\r\n<p>So what happened? <code>make</code> first start to search in your <em>current directory</em> for a file called <code>Makefile</code>. This file contains <em>instructions</em>, aka <em>rules</em>, that tell <code>make</code> what to do. Since there is no such file, <code>make</code> stops almost instantly.</p>\r\n<h1 id=\"make-it-simple\"><code>make</code> it simple</h1>\r\n<p>Now write a simple hello world program, which you will save into a file called <code>hello.c</code>. This program will print the following on the standard output:</p>\r\n<pre class=\"\"><code>Hello make</code></pre>\r\n<p>Now, fire up your terminal, use <code>cd path/to/hello/folder/</code> to go to the directory which contains <code>hello.c</code> (<a href=\"https://inginious.info.ucl.ac.be/course/LSINF1252/s2_make/hello.c\">download hello.c</a> to compare with what you did) and type: <code>make hello</code></p>\r\n<p>Now the <code>make</code> comes alive and tells you something like:</p>\r\n<pre class=\"\"><code>gcc     hello.c   -o hello</code></pre>\r\n<p>Wow! What happened? When you typed <code>make hello</code>, <code>hello</code> is what is called a <strong>target</strong>. A <strong>target</strong> is usually the name of a file that is generated by a program; examples of targets are executable or object files.</p>\r\n<p>Basically, <code>make</code> will search for a file named <code>hello</code> and detect from that file what programming language it uses. For most languages, <code>make</code> has some basic builtin recipes, called <strong>implicit rules</strong>, to compile it. Here the <strong>recipe</strong> is given in the above output.</p>\r\n<p>In that output:</p>\r\n<ul>\r\n<li><code>gcc</code> stands for <em>GNU C Compiler</em>;</li>\r\n<li><code>hello.c</code> the C program to be compiled;</li>\r\n<li><code>-o hello</code> an option to place the output of the compilation in the file <code>hello</code>.</li>\r\n</ul>\r\n<p>Now if you type <code>ls</code> in your command line, you will see that a file <code>hello</code> appeared. This is the <strong>executable</strong> built by <code>make</code> from <code>hello.c</code>. Now you can execute it and verify what is printed on the standard output.</p>\r\n<p>If you type again <code>make hello</code> in your command line, it will tell you:</p>\r\n<pre class=\"\"><code>make: &#39;hello&#39; is up to date.</code></pre>\r\n<p>That is because <code>make</code> only builds the files that are changed. If <code>hello</code> is more recent than its source file <code>hello.c</code>, <code>make</code> will skip the compilation process.</p>\r\n<p>To see this, modify <code>hello.c</code> to write the following on the standard output:</p>\r\n<pre class=\"\"><code>Hello, make!</code></pre>\r\n<p>Finally, run <code>make hello</code> again. Since <code>hello.c</code> is more recent than <code>hello</code>, <code>make</code> will compile the source file again.</p>\r\n<p>Thats it, you made your first experiences with <code>make</code>.</p>\r\n<p>Now I strongly recommend you read <a href=\"https://www.gnu.org/software/make/manual/make.html#Introduction\">sections 2.1 to 2.3. in the GNU make manual</a>. It will only take you 10 minutes (included in the above given estimated time) and will help you understand how to <code>make</code> magic happen.</p>\r\n<p>Once you read these 3 sections, let us practice a bit.</p>\r\n<p>To try the following questions locally, you can download a zip file of the questions folder <a href=\"https://inginious.info.ucl.ac.be/course/LSINF1252/s2_make/make_me.zip\">here</a>.</p>\r\n<hr />\r\n<h1 id=\"references\">References</h1>\r\n<ul>\r\n<li><a href=\"https://sites.uclouvain.be/SystInfo/notes/Outils/html/make.html\">https://sites.uclouvain.be/SystInfo/notes/Outils/html/make.html</a></li>\r\n<li><a href=\"https://www.gnu.org/software/make/manual/\">https://www.gnu.org/software/make/manual/</a></li>\r\n</ul>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3433,7 +3433,7 @@
         },
         {
             "title": "make basics - calculator",
-            "description": "*Estimated time: 5 minutes*\r\n\r\nYou have just built a simple calculator. When typing `ls` in your\r\ncommand line, the source folder has the following structure:\r\n\r\n``` console\r\ncalc.c    calc.h    Makefile    operations.c    operations.h\r\n```\r\n\r\n`calc.c` contains the calculator which handles the 4 basic operations:\r\naddition, substraction, multiplication, and division. These 4 operations\r\nare implemented in `operations.c`.\r\n\r\nAs you might have noticed, there are also two other files: `calc.h` and\r\n`operations.h`. These are the corresponding **header** files of `calc.c`\r\nand `operations.c`. These headers contain the function prototypes and\r\nspecifications, but not their definitions. They can also contain\r\n`extern` declarations of variables. For more on that, see [this\r\npage](https://www.tutorialspoint.com/cprogramming/c_header_files.htm) or\r\nchapter 4 in\r\n<a href=\"#kernighan2006c\" class=\"citation\">[kernighan2006c]</a>.\r\n\r\nWhen compiling this calculator, you need to specify in the `Makefile`\r\nrules the header files needed by `calc.c`, that is both `calc.h` and\r\n`operations.h`.\r\n\r\n------------------------------------------------------------------------\r\n\r\n<span id=\"kernighan2006c\" class=\"citation-label\">kernighan2006c</span>  \r\nKernighan, B. W., & Ritchie, D. M. (2006). The C programming language.\r\n",
+            "description": "<p><em>Estimated time: 5 minutes</em></p>\r\n<p>You have just built a simple calculator. When typing <code>ls</code> in your command line, the source folder has the following structure:</p>\r\n<pre class=\"console\"><code>calc.c    calc.h    Makefile    operations.c    operations.h</code></pre>\r\n<p><code>calc.c</code> contains the calculator which handles the 4 basic operations: addition, substraction, multiplication, and division. These 4 operations are implemented in <code>operations.c</code>.</p>\r\n<p>As you might have noticed, there are also two other files: <code>calc.h</code> and <code>operations.h</code>. These are the corresponding <strong>header</strong> files of <code>calc.c</code> and <code>operations.c</code>. These headers contain the function prototypes and specifications, but not their definitions. They can also contain <code>extern</code> declarations of variables. For more on that, see <a href=\"https://www.tutorialspoint.com/cprogramming/c_header_files.htm\">this page</a> or chapter 4 in <a href=\"#kernighan2006c\" class=\"citation\">[kernighan2006c]</a>.</p>\r\n<p>When compiling this calculator, you need to specify in the <code>Makefile</code> rules the header files needed by <code>calc.c</code>, that is both <code>calc.h</code> and <code>operations.h</code>.</p>\r\n<hr />\r\n<div id=\"citations\">\r\n<dl>\r\n<dt><span id=\"kernighan2006c\" class=\"citation-label\">kernighan2006c</span></dt>\r\n<dd><p>Kernighan, B. W., &amp; Ritchie, D. M. (2006). The C programming language.</p>\r\n</dd>\r\n</dl>\r\n</div>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3495,7 +3495,7 @@
         },
         {
             "title": "make basics - multiple choice questions",
-            "description": "*Estimated time: 5 minutes*\r\n",
+            "description": "<p><em>Estimated time: 5 minutes</em></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3552,7 +3552,7 @@
         },
         {
             "title": "Cunit basics",
-            "description": "*Estimated time: 5 minutes*\r\n",
+            "description": "<p><em>Estimated time: 5 minutes</em></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3604,7 +3604,7 @@
         },
         {
             "title": "make more basics",
-            "description": "*Estimated time: 20 minutes*\r\n\r\nFirst, read [sections 2.4 to 2.7. in the GNU make\r\nmanual](https://www.gnu.org/software/make/manual/make.html#Variables-Simplify).\r\nIt will only take you 10 minutes (included in the above given estimated\r\ntime) and will help you understand how to `make` more magic happen.\r\n\r\nAs you have just read, one very useful use of Makefiles is to use\r\nvariables. You can use a variable to define the C compiler you will use\r\nand the flags you want it to use.\r\n\r\nFor instance, let us consider the following excerpt of a Makefile:\r\n\r\n``` console\r\n# See gcc/clang manual to understand all flags\r\nCFLAGS += -std=c99 # Define which version of the C standard to use\r\nCFLAGS += -Wall # Enable the 'all' set of warnings\r\nCFLAGS += -Werror # Treat all warnings as error\r\nCFLAGS += -Wshadow # Warn when shadowing variables\r\nCFLAGS += -Wextra # Enable additional warnings\r\nCFLAGS += -O2 -D_FORTIFY_SOURCE=2 # Add canary code, i.e. detect buffer overflows\r\nCFLAGS += -fstack-protector-all # Add canary code to detect stack smashing\r\n\r\n# Object files\r\nOBJ = # TODO\r\n\r\n## all        : Build calculator (by default)\r\n# Default target\r\nall: calc\r\n\r\n## calc        : Build calculator\r\ncalc: # TODO\r\n\r\ncalc.o: # TODO\r\n\r\noperations.o: # TODO\r\n\r\n.PHONY: clean mrproper help\r\n\r\n## clean        : Remove auto-generated files\r\nclean:\r\n    @rm -f src/*.o\r\n\r\n## mrproper    : Remove both auto-generated & built files\r\nmrproper: clean\r\n    @rm -f calc\r\n\r\n## help        : Show different make options\r\nhelp: Makefile\r\n    @sed -n 's/^##//p' $<\r\n```\r\n\r\nIn this file we used 3 variables: `CC` to define the C Compiler;\r\n`CFLAGS` to define the C Compiler flags; `OBJ` to define the object\r\nfiles. This is a common use of variables to both simplify the Makefile\r\nand easily change the settings of the compiler.\r\n\r\nNotice the use of two `.PHONY` targets: `clean` which will remove\r\nauto-generated files, e.g. object files; `mrproper` which will remove\r\nboth auto-generated & built files, e.g. executable files; `help` which\r\nwill search for lines starting with `##` and print them on `stdout`\r\nwithout the `##`. Try it out by tipping `make help`.\r\n",
+            "description": "<p><em>Estimated time: 20 minutes</em></p>\r\n<p>First, read <a href=\"https://www.gnu.org/software/make/manual/make.html#Variables-Simplify\">sections 2.4 to 2.7. in the GNU make manual</a>. It will only take you 10 minutes (included in the above given estimated time) and will help you understand how to <code>make</code> more magic happen.</p>\r\n<p>As you have just read, one very useful use of Makefiles is to use variables. You can use a variable to define the C compiler you will use and the flags you want it to use.</p>\r\n<p>For instance, let us consider the following excerpt of a Makefile:</p>\r\n<pre class=\"console\"><code># See gcc/clang manual to understand all flags\r\nCFLAGS += -std=c99 # Define which version of the C standard to use\r\nCFLAGS += -Wall # Enable the &#39;all&#39; set of warnings\r\nCFLAGS += -Werror # Treat all warnings as error\r\nCFLAGS += -Wshadow # Warn when shadowing variables\r\nCFLAGS += -Wextra # Enable additional warnings\r\nCFLAGS += -O2 -D_FORTIFY_SOURCE=2 # Add canary code, i.e. detect buffer overflows\r\nCFLAGS += -fstack-protector-all # Add canary code to detect stack smashing\r\n\r\n# Object files\r\nOBJ = # TODO\r\n\r\n## all        : Build calculator (by default)\r\n# Default target\r\nall: calc\r\n\r\n## calc        : Build calculator\r\ncalc: # TODO\r\n\r\ncalc.o: # TODO\r\n\r\noperations.o: # TODO\r\n\r\n.PHONY: clean mrproper help\r\n\r\n## clean        : Remove auto-generated files\r\nclean:\r\n    @rm -f src/*.o\r\n\r\n## mrproper    : Remove both auto-generated &amp; built files\r\nmrproper: clean\r\n    @rm -f calc\r\n\r\n## help        : Show different make options\r\nhelp: Makefile\r\n    @sed -n &#39;s/^##//p&#39; $&lt;</code></pre>\r\n<p>In this file we used 3 variables: <code>CC</code> to define the C Compiler; <code>CFLAGS</code> to define the C Compiler flags; <code>OBJ</code> to define the object files. This is a common use of variables to both simplify the Makefile and easily change the settings of the compiler.</p>\r\n<p>Notice the use of two <code>.PHONY</code> targets: <code>clean</code> which will remove auto-generated files, e.g. object files; <code>mrproper</code> which will remove both auto-generated &amp; built files, e.g. executable files; <code>help</code> which will search for lines starting with <code>##</code> and print them on <code>stdout</code> without the <code>##</code>. Try it out by tipping <code>make help</code>.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3661,7 +3661,7 @@
         },
         {
             "title": "make more basics - multiple choice questions",
-            "description": "*Estimated time: 15 minutes*\r\n",
+            "description": "<p><em>Estimated time: 15 minutes</em></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3713,7 +3713,7 @@
         },
         {
             "title": "make tests",
-            "description": "*Estimated time: 15 minutes*\r\n\r\nThis week, we will see how to automate the testing process. You have the\r\nfollowing project folder structure:\r\n\r\n``` \r\nsrc/\r\n    calc.c\r\n    calc.h\r\n    operations.c\r\n    operations.h\r\ntest/\r\n    calc_test.c\r\n    operations_test.c\r\nMakefile\r\n```\r\n\r\nThe `Makefile` is partially done, but somehow the target `test` for\r\nbuilding the tests was lost.\r\n\r\n``` \r\nCC = gcc\r\n# See gcc/clang manual to understand all flags\r\nCFLAGS += -std=c99 # Define which version of the C standard to use\r\nCFLAGS += -Wall # Enable the 'all' set of warnings\r\nCFLAGS += -Werror # Treat all warnings as error\r\nCFLAGS += -Wshadow # Warn when shadowing variables\r\nCFLAGS += -Wextra # Enable additional warnings\r\nCFLAGS += -O2 -D_FORTIFY_SOURCE=2 # Add canary code, i.e. detect buffer overflows\r\nCFLAGS += -fstack-protector-all # Add canary code to detect stack smashing\r\n\r\n# We have no libraries to link against except libc, but we want to keep\r\n# the symbols for debugging\r\nLDFLAGS= -rdynamic -lcunit\r\n\r\n## all        : Build calc (by default)\r\n# Default target\r\nall: calc\r\n\r\n## debug        : Build calc in debug mode\r\n# If we run `make debug` instead, keep the debug symbols for gdb\r\n# and define the DEBUG macro.\r\ndebug: CFLAGS += -g -DDEBUG -Wno-unused-parameter -fno-omit-frame-pointer\r\ndebug: clean calc\r\n\r\n## calc        : Build calc\r\n# We use an implicit rule: look for the files {calc,operations}.{c,h},\r\n# compile them and link the resulting *.o into an executable named calc\r\ncalc: calc.o operations.o\r\n    $(CC) $(CFLAGS)  -o calc {calc,operations}.o\r\n\r\n# We use an implicit rule: look for the files calc.{c,h},\r\n# compile them w/out linking\r\ncalc.o: src/calc.c src/calc.h\r\n    $(CC) $(CFLAGS) -c src/calc.{c,h}\r\n# We use an implicit rule: look for the files operations.{c,h},\r\n# compile them w/out linking\r\noperations.o: src/operations.c src/operations.h\r\n    $(CC) $(CFLAGS) -c src/operations.{c,h}\r\n\r\n# YOUR CODE HERE #\r\n\r\n# Declare clean, mrproper and help as a phony targets\r\n.PHONY: clean mrproper help\r\n\r\n## clean        : Remove auto-generated files from build\r\nclean:\r\n    @rm -f *.o\r\n\r\n## clean-debug        : Removve auto-generated files from debug mode build\r\nclean-debug:\r\n    @rm -f src/*.gch\r\n## mrproper    : Remove both auto-generated & built files\r\nmrproper: clean clean-debug\r\n    @rm -f calc\r\n\r\n## help        : Show different make options\r\nhelp: Makefile\r\n    @sed -n 's/^##//p' $<\r\n```\r\n\r\nTo try locally, you can download the project folder <span\r\nclass=\"title-ref\">\\_here &lt;&gt;</span>\r\n",
+            "description": "<p><em>Estimated time: 15 minutes</em></p>\r\n<p>This week, we will see how to automate the testing process. You have the following project folder structure:</p>\r\n<pre class=\"\"><code>src/\r\n    calc.c\r\n    calc.h\r\n    operations.c\r\n    operations.h\r\ntest/\r\n    calc_test.c\r\n    operations_test.c\r\nMakefile</code></pre>\r\n<p>The <code>Makefile</code> is partially done, but somehow the target <code>test</code> for building the tests was lost.</p>\r\n<pre class=\"\"><code>CC = gcc\r\n# See gcc/clang manual to understand all flags\r\nCFLAGS += -std=c99 # Define which version of the C standard to use\r\nCFLAGS += -Wall # Enable the &#39;all&#39; set of warnings\r\nCFLAGS += -Werror # Treat all warnings as error\r\nCFLAGS += -Wshadow # Warn when shadowing variables\r\nCFLAGS += -Wextra # Enable additional warnings\r\nCFLAGS += -O2 -D_FORTIFY_SOURCE=2 # Add canary code, i.e. detect buffer overflows\r\nCFLAGS += -fstack-protector-all # Add canary code to detect stack smashing\r\n\r\n# We have no libraries to link against except libc, but we want to keep\r\n# the symbols for debugging\r\nLDFLAGS= -rdynamic -lcunit\r\n\r\n## all        : Build calc (by default)\r\n# Default target\r\nall: calc\r\n\r\n## debug        : Build calc in debug mode\r\n# If we run `make debug` instead, keep the debug symbols for gdb\r\n# and define the DEBUG macro.\r\ndebug: CFLAGS += -g -DDEBUG -Wno-unused-parameter -fno-omit-frame-pointer\r\ndebug: clean calc\r\n\r\n## calc        : Build calc\r\n# We use an implicit rule: look for the files {calc,operations}.{c,h},\r\n# compile them and link the resulting *.o into an executable named calc\r\ncalc: calc.o operations.o\r\n    $(CC) $(CFLAGS)  -o calc {calc,operations}.o\r\n\r\n# We use an implicit rule: look for the files calc.{c,h},\r\n# compile them w/out linking\r\ncalc.o: src/calc.c src/calc.h\r\n    $(CC) $(CFLAGS) -c src/calc.{c,h}\r\n# We use an implicit rule: look for the files operations.{c,h},\r\n# compile them w/out linking\r\noperations.o: src/operations.c src/operations.h\r\n    $(CC) $(CFLAGS) -c src/operations.{c,h}\r\n\r\n# YOUR CODE HERE #\r\n\r\n# Declare clean, mrproper and help as a phony targets\r\n.PHONY: clean mrproper help\r\n\r\n## clean        : Remove auto-generated files from build\r\nclean:\r\n    @rm -f *.o\r\n\r\n## clean-debug        : Removve auto-generated files from debug mode build\r\nclean-debug:\r\n    @rm -f src/*.gch\r\n## mrproper    : Remove both auto-generated &amp; built files\r\nmrproper: clean clean-debug\r\n    @rm -f calc\r\n\r\n## help        : Show different make options\r\nhelp: Makefile\r\n    @sed -n &#39;s/^##//p&#39; $&lt;</code></pre>\r\n<p>To try locally, you can download the project folder <span class=\"title-ref\">_here &lt;&gt;</span></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3775,7 +3775,7 @@
         },
         {
             "title": "Save struct into file",
-            "description": "*Estimated time: 25 minutes*\r\n\r\nYou are currently processing an array composed of `struct point` defined\r\nbelow. In this programme, you need to store the content of the entire\r\narray in a file to be able to reuse it later. Write a C function to\r\nwrite the array composed of `struct point` into a file. The file may\r\nalready exist or not. After the execution of the function, the file\r\nshould only contain the array. If the file has to be created, the user\r\nwho created it must have the permission to read it.\r\n\r\n``` c\r\ntypedef struct point {\r\n    int x;\r\n    int y;\r\n    int z;\r\n} point_t;\r\n```\r\n\r\nUse only `open(2)`, `write(2)` and `close(2)`. You can only call\r\n`write(2)` once.\r\n\r\nHint : read carefully the man page of `open(2)` to manage all the cases\r\nmentioned above. Be sure to open the file with the appropriate rights.\r\n",
+            "description": "<p><em>Estimated time: 25 minutes</em></p>\r\n<p>You are currently processing an array composed of <code>struct point</code> defined below. In this programme, you need to store the content of the entire array in a file to be able to reuse it later. Write a C function to write the array composed of <code>struct point</code> into a file. The file may already exist or not. After the execution of the function, the file should only contain the array. If the file has to be created, the user who created it must have the permission to read it.</p>\r\n<pre class=\"c\"><code>typedef struct point {\r\n    int x;\r\n    int y;\r\n    int z;\r\n} point_t;</code></pre>\r\n<p>Use only <code>open(2)</code>, <code>write(2)</code> and <code>close(2)</code>. You can only call <code>write(2)</code> once.</p>\r\n<p>Hint : read carefully the man page of <code>open(2)</code> to manage all the cases mentioned above. Be sure to open the file with the appropriate rights.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3841,7 +3841,7 @@
         },
         {
             "title": "Reading integers in a binary file",
-            "description": "*Estimated time: 25 minutes*\r\n\r\nGiven a binary file containing some (possibly none) positive integers\r\n(`int`) that were stored in the file by successive calls of\r\n`write(fd,&num,sizeof(int))` write code that computes the sum of all\r\nintegers that were stored in the file. The function returns the sum when\r\nthere are no errors. In case of errors, it returns.\r\n\r\n-   If `open()` fails, return `-1`.\r\n-   If `read()` fails, return `-2`.\r\n-   If `close()` fails, return `-3`.\r\n\r\nYou can only use `open(2)`, `read(2)`, `write(2)` and `close(2)`.\r\n",
+            "description": "<p><em>Estimated time: 25 minutes</em></p>\r\n<p>Given a binary file containing some (possibly none) positive integers (<code>int</code>) that were stored in the file by successive calls of <code>write(fd,&amp;num,sizeof(int))</code> write code that computes the sum of all integers that were stored in the file. The function returns the sum when there are no errors. In case of errors, it returns.</p>\r\n<ul>\r\n<li>If <code>open()</code> fails, return <code>-1</code>.</li>\r\n<li>If <code>read()</code> fails, return <code>-2</code>.</li>\r\n<li>If <code>close()</code> fails, return <code>-3</code>.</li>\r\n</ul>\r\n<p>You can only use <code>open(2)</code>, <code>read(2)</code>, <code>write(2)</code> and <code>close(2)</code>.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3911,7 +3911,7 @@
         },
         {
             "title": "Get and set on array stored in binary file",
-            "description": "*Estimated time: 30 minutes*\r\n\r\nGiven a file containing a large array of integers, you have to write a\r\nfunction to edit the element at a given index in the array and another\r\nfunction to retrieve a specific element from this array.\r\n\r\nSince the array is huge, you cannot load it completely in memory.\r\nConsequently, you have to naviguate directly through the array in the\r\nfile by using `lseek(2)`.\r\n\r\nYou may want to use `fstat(2)` to obtain informations about a given\r\nfile.\r\n\r\nUse only `open(2)`, `read(2)`, `write(2)`, `close(2)` and `lseek(2)`.\r\n",
+            "description": "<p><em>Estimated time: 30 minutes</em></p>\r\n<p>Given a file containing a large array of integers, you have to write a function to edit the element at a given index in the array and another function to retrieve a specific element from this array.</p>\r\n<p>Since the array is huge, you cannot load it completely in memory. Consequently, you have to naviguate directly through the array in the file by using <code>lseek(2)</code>.</p>\r\n<p>You may want to use <code>fstat(2)</code> to obtain informations about a given file.</p>\r\n<p>Use only <code>open(2)</code>, <code>read(2)</code>, <code>write(2)</code>, <code>close(2)</code> and <code>lseek(2)</code>.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -3973,7 +3973,7 @@
         },
         {
             "title": "File copy",
-            "description": "*Estimated time: 30 minutes*\r\n\r\nGiven a file containing arbitrary bytes, you must write a function that\r\ncopies the file. Obviously, your function cannot modify the content of\r\nthe original file. Beware that the copied file should have the same\r\npermissions as the original file.\r\n\r\nUse only `open(2)`, `read(2)`, `write(2)`, `stat(2)` and `close(2)`.\r\n\r\n*Hint: you may need either to go through the file or to get the total\r\nsize to copy all of it.*\r\n",
+            "description": "<p><em>Estimated time: 30 minutes</em></p>\r\n<p>Given a file containing arbitrary bytes, you must write a function that copies the file. Obviously, your function cannot modify the content of the original file. Beware that the copied file should have the same permissions as the original file.</p>\r\n<p>Use only <code>open(2)</code>, <code>read(2)</code>, <code>write(2)</code>, <code>stat(2)</code> and <code>close(2)</code>.</p>\r\n<p><em>Hint: you may need either to go through the file or to get the total size to copy all of it.</em></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4043,7 +4043,7 @@
         },
         {
             "title": "File exists",
-            "description": "*Estimated time: 10 minutes*\r\n\r\nUsing\r\n[open(2)](https://sites.uclouvain.be/SystInfo/manpages/man2/open.2.html),\r\ndetermine if a file exists.\r\n",
+            "description": "<p><em>Estimated time: 10 minutes</em></p>\r\n<p>Using <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man2/open.2.html\">open(2)</a>, determine if a file exists.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4101,7 +4101,7 @@
         },
         {
             "title": "Search and replace",
-            "description": "Le syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants : -\r\n<http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes) -\r\n<http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes) -\r\n<http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions des\r\nlibrairies)\r\n",
+            "description": "<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n<p>Les pages de manuel sont accessibles depuis les URLs suivants : - <a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes) - <a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes) - <a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions des librairies)</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4155,7 +4155,7 @@
         },
         {
             "title": "Bitwise operation: setting a bit",
-            "description": "In this exercise, we will work with operations on bits. When we speak\r\nabout the position of a bit, index 0 corresponds to lowest order bit, 1\r\nto the second-lowest order bit, ...\r\n\r\nIn C source code, you can write a number in binary (base 2) by prefixing\r\nit via 0b., e.g. 0b11010 = 26.\r\n\r\nThis exercise will introduce some non-standard data types which\r\nguarantee that the variable has a fixed number of bits. Indeed, on some\r\nmachines, a *int* could use 2, 4 or 8 bytes. Hence, if we want to\r\nperform bitwise operations, we have to know first on how many bits we\r\nare working.\r\n\r\nFor this, C introduces a new class of variable types :\r\n\r\n-   *int8\\_t* (signed integer of 8 bits)\r\n-   *uint8\\_t* (unsigned integer of 8 bits)\r\n-   *uint16\\_t* (unsigned integer of 16 bits)\r\n\r\nYou can mix *uint* or *int* with bit-lengths 8, 16, 32 and 64). These\r\ntypes are defined in &lt;stdint.h&gt;\r\n",
+            "description": "<p>In this exercise, we will work with operations on bits. When we speak about the position of a bit, index 0 corresponds to lowest order bit, 1 to the second-lowest order bit, ...</p>\r\n<p>In C source code, you can write a number in binary (base 2) by prefixing it via 0b., e.g. 0b11010 = 26.</p>\r\n<p>This exercise will introduce some non-standard data types which guarantee that the variable has a fixed number of bits. Indeed, on some machines, a <em>int</em> could use 2, 4 or 8 bytes. Hence, if we want to perform bitwise operations, we have to know first on how many bits we are working.</p>\r\n<p>For this, C introduces a new class of variable types :</p>\r\n<ul>\r\n<li><em>int8_t</em> (signed integer of 8 bits)</li>\r\n<li><em>uint8_t</em> (unsigned integer of 8 bits)</li>\r\n<li><em>uint16_t</em> (unsigned integer of 16 bits)</li>\r\n</ul>\r\n<p>You can mix <em>uint</em> or <em>int</em> with bit-lengths 8, 16, 32 and 64). These types are defined in &lt;stdint.h&gt;</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4259,7 +4259,7 @@
         },
         {
             "title": "Simple stack",
-            "description": "You are asked to implement the `pop` and `push` functions of the\r\nfollowing\r\n[stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))\r\ninterface :\r\n\r\n``` c\r\nstruct node {\r\n    node *next;\r\n    char *name;\r\n};\r\n```\r\n\r\n<img src=\"https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png\" class=\"align-right\" width=\"386\" height=\"270\" alt=\"image\" />\r\n\r\n*Hints* :\r\n\r\n-   `char *name` is also a pointer, memory must be allocated by using\r\n    [malloc(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/malloc.3.html)\r\n    to copy the string on the stack.\r\n-   Other useful commands:\r\n    [strncpy(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/strncpy.3.html)\r\n    and\r\n    [strlen(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/strlen.3.html).\r\n-   Do not forget to free **all** the allocated space when popping one\r\n    element.\r\n",
+            "description": "<p>You are asked to implement the <code>pop</code> and <code>push</code> functions of the following <a href=\"https://en.wikipedia.org/wiki/Stack_(abstract_data_type)\">stack</a> interface :</p>\r\n<pre class=\"c\"><code>struct node {\r\n    node *next;\r\n    char *name;\r\n};</code></pre>\r\n<p><img src=\"https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png\" class=\"align-right\" width=\"386\" height=\"270\" alt=\"image\" /></p>\r\n<p><em>Hints</em> :</p>\r\n<ul>\r\n<li><code>char *name</code> is also a pointer, memory must be allocated by using <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/malloc.3.html\">malloc(3)</a> to copy the string on the stack.</li>\r\n<li>Other useful commands: <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/strncpy.3.html\">strncpy(3)</a> and <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/strlen.3.html\">strlen(3)</a>.</li>\r\n<li>Do not forget to free <strong>all</strong> the allocated space when popping one element.</li>\r\n</ul>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4318,7 +4318,7 @@
         },
         {
             "title": "Sleepy malloc",
-            "description": "The\r\n[malloc(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/malloc.3.html)\r\nfunction may fail, for instance if the OS has no free memory remaining.\r\nIn this case, it may be possible that some other processes may free some\r\nmemory after some time.\r\n\r\nIn our program, instead of reporting an error immediately if no free\r\nmemory is available, we will wait some time to see if the OS has freed\r\nmemory for us.\r\n",
+            "description": "<p>The <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/malloc.3.html\">malloc(3)</a> function may fail, for instance if the OS has no free memory remaining. In this case, it may be possible that some other processes may free some memory after some time.</p>\r\n<p>In our program, instead of reporting an error immediately if no free memory is available, we will wait some time to see if the OS has freed memory for us.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4377,7 +4377,7 @@
         },
         {
             "title": "Soumission du projet fractale",
-            "description": "Cette tâche vous permet de soumettre votre projet. Elle va également\r\nvalider le format de votre archive, la présence des fichiers requis, la\r\nprésence des cibles requises dans votre Makefile et la bonne compilation\r\nde votre projet. Le format requis est décrit dans l'énoncé disponible\r\nsur Moodle.\r\n\r\nVotre archive doit respecter le format de nommage <span\r\nclass=\"title-ref\">fractal\\_NUMGroupe\\_NOM1\\_NOM2.zip</span>. **Un seul\r\ndes deux membres du groupe doit soumettre.**\r\n\r\nLa dernière soumission **valide** sera considérée pour l'évaluation. En\r\nl'absence de telle soumission (donc si votre soumission comporte une\r\nerreur), votre projet **ne sera pas considéré pour l'évaluation**.\r\n",
+            "description": "<p>Cette tâche vous permet de soumettre votre projet. Elle va également valider le format de votre archive, la présence des fichiers requis, la présence des cibles requises dans votre Makefile et la bonne compilation de votre projet. Le format requis est décrit dans l'énoncé disponible sur Moodle.</p>\r\n<p>Votre archive doit respecter le format de nommage <span class=\"title-ref\">fractal_NUMGroupe_NOM1_NOM2.zip</span>. <strong>Un seul des deux membres du groupe doit soumettre.</strong></p>\r\n<p>La dernière soumission <strong>valide</strong> sera considérée pour l'évaluation. En l'absence de telle soumission (donc si votre soumission comporte une erreur), votre projet <strong>ne sera pas considéré pour l'évaluation</strong>.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4422,7 +4422,7 @@
         },
         {
             "title": "Global and local variables",
-            "description": "In a C program, variables are stored in different regions in memory,\r\ndepending on where the variables have been initialized. Each memory\r\nregion has different properties about how the variables can be accessed,\r\nmodified, ... This exercise will show you how global variables and\r\nvariables on the stack are managed.\r\n\r\n``` c\r\nint result;\r\n\r\nvoid sum1(int a1, int b1) {\r\n    a1 = a1 + b1;\r\n}\r\n\r\nvoid main(int argc, char **argv) {\r\n    int a1 = 5, b1 = 6;\r\n\r\n    sum1(a1, b1);\r\n    printf(\"sum1: %d\\n\", a1);\r\n\r\n    int a2 = 3, b2 = 7;\r\n    sum2(a2, b2)\r\n    printf(\"sum2: %d\\n\", result);\r\n\r\n    int a3 = 1, b3 = 8;\r\n    sum3(&a3, &b3);\r\n    printf(\"sum3: %d\\n\", a3);\r\n}\r\n```\r\n",
+            "description": "<p>In a C program, variables are stored in different regions in memory, depending on where the variables have been initialized. Each memory region has different properties about how the variables can be accessed, modified, ... This exercise will show you how global variables and variables on the stack are managed.</p>\r\n<pre class=\"c\"><code>int result;\r\n\r\nvoid sum1(int a1, int b1) {\r\n    a1 = a1 + b1;\r\n}\r\n\r\nvoid main(int argc, char **argv) {\r\n    int a1 = 5, b1 = 6;\r\n\r\n    sum1(a1, b1);\r\n    printf(&quot;sum1: %d\\n&quot;, a1);\r\n\r\n    int a2 = 3, b2 = 7;\r\n    sum2(a2, b2)\r\n    printf(&quot;sum2: %d\\n&quot;, result);\r\n\r\n    int a3 = 1, b3 = 8;\r\n    sum3(&amp;a3, &amp;b3);\r\n    printf(&quot;sum3: %d\\n&quot;, a3);\r\n}</code></pre>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4490,7 +4490,7 @@
         },
         {
             "title": "Exponentially static counter - REVIEWED",
-            "description": "A variable declared inside a function with the keyword *static* implies\r\nthat the value of this variable will be kept across the different calls\r\nto this function.\r\n\r\nFor example, the first call to your function should return `1`. The next\r\ncall `2`, then `4`, ..., `4096`, `1`, ...\r\n",
+            "description": "<p>A variable declared inside a function with the keyword <em>static</em> implies that the value of this variable will be kept across the different calls to this function.</p>\r\n<p>For example, the first call to your function should return <code>1</code>. The next call <code>2</code>, then <code>4</code>, ..., <code>4096</code>, <code>1</code>, ...</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4544,7 +4544,7 @@
         },
         {
             "title": "Improved strcpy",
-            "description": "The classic function\r\n`char *strcpy(char *destination, const char *source);`\r\n[strcpy(3)](https://linux.die.net/man/3/strcpy) needs a destination\r\nbuffer where the source string is copied. We ask you to code a function\r\nwhich allocates a buffer itself, and then performs the copy.\r\n\r\nThe use of copy functions as `memcpy` is not allowed.\r\n\r\n*Hint* : use\r\n[malloc(3)](https://sites.uclouvain.be/SystInfo/manpages/man3/malloc.3.html)\r\n",
+            "description": "<p>The classic function <code>char *strcpy(char *destination, const char *source);</code> <a href=\"https://linux.die.net/man/3/strcpy\">strcpy(3)</a> needs a destination buffer where the source string is copied. We ask you to code a function which allocates a buffer itself, and then performs the copy.</p>\r\n<p>The use of copy functions as <code>memcpy</code> is not allowed.</p>\r\n<p><em>Hint</em> : use <a href=\"https://sites.uclouvain.be/SystInfo/manpages/man3/malloc.3.html\">malloc(3)</a></p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4602,7 +4602,7 @@
         },
         {
             "title": "Manipulation de chaines de caractères",
-            "description": "Le syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants :  \r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions des\r\n    librairies)\r\n\r\n**Attention:** veuillez utiliser la version **HTML** du syllabus\r\n",
+            "description": "<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n<dl>\r\n<dt>Les pages de manuel sont accessibles depuis les URLs suivants :</dt>\r\n<dd><ul>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions des librairies)</li>\r\n</ul>\r\n</dd>\r\n</dl>\r\n<p><strong>Attention:</strong> veuillez utiliser la version <strong>HTML</strong> du syllabus</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4661,7 +4661,7 @@
         },
         {
             "title": "Echange de valeurs de fractions",
-            "description": "Soit la définition de la structure représentant des fractions entières\r\nsuivante:\r\n\r\n``` c\r\nstruct fract_t {\r\n        int num;\r\n        int denum;\r\n};\r\n```\r\n\r\nOn veut pouvoir swapper (échanger) les valeurs de deux fractions en\r\nutilisant la fonction `void swap(struct fract_t *a, struct fract_t *b)`.\r\nEcrivez le code de cette fonction.\r\n",
+            "description": "<p>Soit la définition de la structure représentant des fractions entières suivante:</p>\r\n<pre class=\"c\"><code>struct fract_t {\r\n        int num;\r\n        int denum;\r\n};</code></pre>\r\n<p>On veut pouvoir swapper (échanger) les valeurs de deux fractions en utilisant la fonction <code>void swap(struct fract_t *a, struct fract_t *b)</code>. Ecrivez le code de cette fonction.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4778,7 +4778,7 @@
         },
         {
             "title": "Through the array",
-            "description": "In C, an array is a set of variables sharing the same data type :\r\n`int array[3] = {42, 1337, 0};`.\r\n\r\nAn item of an array can be retrieved through its index. For example\r\n`array[1]` gives the second element of the array (here `1337`).\r\n",
+            "description": "<p>In C, an array is a set of variables sharing the same data type : <code>int array[3] = {42, 1337, 0};</code>.</p>\r\n<p>An item of an array can be retrieved through its index. For example <code>array[1]</code> gives the second element of the array (here <code>1337</code>).</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4832,7 +4832,7 @@
         },
         {
             "title": "Trier une liste chainée",
-            "description": "Le but de cet exercice est de trier une liste chaînée. Pour ce faire, on\r\nvous laisse le choix de l'algorithme que vous souhaitez implémenter. La\r\nseule contrainte est que la liste se décrit comme suit :\r\n\r\n``` c\r\nstruct list {\r\n    struct node* head;\r\n}\r\nstruct node {\r\n    int elem;\r\n    struct node* next;\r\n}\r\n```\r\n",
+            "description": "<p>Le but de cet exercice est de trier une liste chaînée. Pour ce faire, on vous laisse le choix de l'algorithme que vous souhaitez implémenter. La seule contrainte est que la liste se décrit comme suit :</p>\r\n<pre class=\"c\"><code>struct list {\r\n    struct node* head;\r\n}\r\nstruct node {\r\n    int elem;\r\n    struct node* next;\r\n}</code></pre>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4891,7 +4891,7 @@
         },
         {
             "title": "true false",
-            "description": "true false\r\n",
+            "description": "<p>true false</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4940,7 +4940,7 @@
         },
         {
             "title": "Les types (1/2)",
-            "description": "Le type de la plupart des variables en C est facile à déterminer.\r\nNéanmoins, le C contient aussi des types qui diffèrent de façons parfois\r\nsubtiles.\r\n",
+            "description": "<p>Le type de la plupart des variables en C est facile à déterminer. Néanmoins, le C contient aussi des types qui diffèrent de façons parfois subtiles.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -4994,7 +4994,7 @@
         },
         {
             "title": "Les types (2/2)",
-            "description": "Le type de la plupart des variables en C est facile à déterminer.\r\nNéanmoins, le C contient aussi des types qui diffèrent de façons parfois\r\nsubtiles.\r\n",
+            "description": "<p>Le type de la plupart des variables en C est facile à déterminer. Néanmoins, le C contient aussi des types qui diffèrent de façons parfois subtiles.</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -5048,7 +5048,7 @@
         },
         {
             "title": "Stockage d'un vecteur de réels dans un fichier",
-            "description": "Le syllabus est accessible depuis l'URL\r\n<http://sites.uclouvain.be/SystInfo>\r\n\r\nLes pages de manuel sont accessibles depuis les URLs suivants :  \r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man1> (commandes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man2> (appels systèmes)\r\n-   <http://sites.uclouvain.be/SystInfo/manpages/man3> (fonctions des\r\n    librairies)\r\n\r\n**Attention:** veuillez utiliser la version **HTML** du syllabus\r\n",
+            "description": "<p>Le syllabus est accessible depuis l'URL <a href=\"http://sites.uclouvain.be/SystInfo\">http://sites.uclouvain.be/SystInfo</a></p>\r\n<dl>\r\n<dt>Les pages de manuel sont accessibles depuis les URLs suivants :</dt>\r\n<dd><ul>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man1\">http://sites.uclouvain.be/SystInfo/manpages/man1</a> (commandes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man2\">http://sites.uclouvain.be/SystInfo/manpages/man2</a> (appels systèmes)</li>\r\n<li><a href=\"http://sites.uclouvain.be/SystInfo/manpages/man3\">http://sites.uclouvain.be/SystInfo/manpages/man3</a> (fonctions des librairies)</li>\r\n</ul>\r\n</dd>\r\n</dl>\r\n<p><strong>Attention:</strong> veuillez utiliser la version <strong>HTML</strong> du syllabus</p>\r\n",
             "tags": [
                 {
                     "text": "INGINIOUS",
@@ -5111,6 +5111,6 @@
         "1": "Misconception",
         "2": "autres"
     },
-    "extraction_date": "2019-12-18T16:15:40.106Z",
+    "extraction_date": "2020-03-04T17:33:55.586Z",
     "url": "https://github.com/UCL-INGI/LSINF1252"
 }
