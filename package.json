@@ -53,7 +53,7 @@
     "js-yaml": "^3.13.1",
     "lodash.groupby": "^4.6.0",
     "lodash.partition": "^4.6.0",
-    "simple-git": "^1.129.0",
+    "simple-git": "^3.3.0",
     "slash": "^3.0.0",
     "supertest": "^4.0.2",
     "yargs": "^15.0.2"
